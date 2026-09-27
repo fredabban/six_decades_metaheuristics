@@ -1,0 +1,70 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{fontenc}
+
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+\title{Supplementary Data S4: Experiment-Level Quantitative Traceability Specification}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026}
+\begin{document}
+\maketitle
+\section*{Evidence subsets}
+The manuscript identifies four overlapping RQ3--RQ4 evidence subsets. They are not additive and are not treated as pooled meta-analytic samples without an experiment-level extraction file.
+\begin{table}[h]
+\centering
+\caption{Candidate quantitative evidence sets.}
+\begin{tabular}{P{6.0cm}rP{7.0cm}}
+\toprule
+Evidence set & $N$ & Permitted use in the manuscript\\
+\midrule
+Rank-compatible reports & 42 & Structured descriptive benchmark comparison only after EXP-level verification.\\
+Fixed-budget reports & 35 & Fixed-budget descriptive comparison only after traceability verification.\\
+Dimensional-scaling reports & 25 & Scaling analysis only when dimensions, budgets and source statistics are recorded.\\
+Real-world reports & 18 & Narrative/application synthesis because problem definitions and metrics differ.\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Required experiment-level data dictionary}
+\begin{longtable}{P{4.0cm}P{10.2cm}}
+\caption{Minimum fields for each quantitative observation.}\\
+\toprule
+Field & Definition\\
+\midrule\endfirsthead
+\toprule Field & Definition\\\midrule\endhead
+\texttt{EXP\_id} & Stable identifier for one benchmark/application comparison.\\
+\texttt{STU\_id} & Study-level identifier linking repeated experiments from the same investigation.\\
+\texttt{REP\_id} & Bibliographic report containing the observation.\\
+\texttt{ALG\_id} & Stable algorithm entity identifier.\\
+\texttt{benchmark} & Benchmark suite or named real-world application.\\
+\texttt{function} & Function/problem identifier within the suite, if applicable.\\
+\texttt{dimension} & Decision-space dimension or problem size.\\
+\texttt{objective\_count} & Number of objectives for multi-/many-objective experiments.\\
+\texttt{budget} & Function-evaluation budget or explicit stopping rule.\\
+\texttt{run\_count} & Number of independent runs supporting the reported statistic.\\
+\texttt{comparator} & Comparator algorithm and configuration.\\
+\texttt{reported\_statistic} & Mean, median, best, rank, error, hypervolume, IGD, runtime, or other reported outcome.\\
+\texttt{uncertainty} & Standard deviation, interquartile range, confidence interval, or other uncertainty measure where reported.\\
+\texttt{direction} & Within-study comparison code: $+1$ better, $0$ tie/not distinguishable, $-1$ worse after orienting the metric.\\
+\texttt{hardware\_software} & Hardware/software details for runtime comparisons.\\
+\texttt{source\_locator} & Exact source page and table/figure number.\\
+\texttt{transformation} & Any normalization, digitization, orientation, or derived calculation applied by the review.\\
+\bottomrule\end{longtable}
+
+\section*{Traceability status}
+The supplied manuscript explicitly states that the fully populated experiment-level quantitative extraction sheet was unavailable for the final evidence audit. Consequently, this supplement does not invent EXP rows, family-level ranks, pooled errors, degradation exponents, or cross-study $p$-values. Quantitative claims in the manuscript are restricted accordingly. The four subset sizes above are retained as candidate evidence-set counts only.
+
+\section*{Convergence-curve rule}
+A convergence figure is admissible only if its source study, benchmark, dimension, evaluation grid, run count, aggregation statistic and any digitization/normalization procedure are recorded. Synthetic or schematic curves must not be presented as empirical evidence.
+\end{document}

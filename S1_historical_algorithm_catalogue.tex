@@ -1,0 +1,981 @@
+\documentclass[8pt]{article}
+
+\usepackage[margin=1.2cm]{geometry}
+\usepackage[T1]{fontenc}
+
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage[expansion=false]{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+
+\title{Supplementary Data S1: Historical Algorithm Catalogue}
+
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026}
+
+\begin{document}
+\maketitle
+\section*{Scope and interpretation}
+This supplement contains all 887 algorithm-labelled catalogue entries used for the historical analysis. Each row is assigned a persistent \texttt{ALG-xxxx} identifier. The catalogue provides the algorithm name, publication year, and reported author information used in the historical synthesis.
+
+\begin{table}[h]
+\centering
+\caption{Catalogue totals used in the manuscript.}
+\begin{tabular}{lrr}
+\toprule
+Wave & Entries & Share (\%)\\
+\midrule
+Evolutionary Origins (1965--1989) & 10 & 1.1\\
+Swarm Emergence (1990--2004) & 46 & 5.2\\
+Population Diversification (2005--2012) & 165 & 18.6\\
+Hybridization Era (2013--2017) & 189 & 21.3\\
+Data-Driven Adaptation (2018--2021) & 229 & 25.8\\
+Physics-Inspired and Human--AI Co-Design (2022--2025) & 248 & 28.0\\
+\midrule
+Total & 887 & 100.0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Normalization audit: duplicate and chronology candidates}
+A name-similarity and year-proximity audit of the 887 rows below identifies ten candidate pairs (twenty rows total) for primary-source resolution before any merge. Rows are retained separately in the main catalogue; this table records the audit finding without pre-judging the outcome. A pair is retained as a candidate rather than merged because acronym or spelling differences alone do not establish that two rows describe the same first-level algorithm.
+
+\begin{longtable}{P{1.6cm}P{5.4cm}P{1.0cm}P{1.6cm}P{5.4cm}P{1.0cm}P{4.0cm}}
+\caption{Duplicate/chronology candidate pairs identified by the normalization audit.}\\
+\toprule
+\textbf{ALG ID} & \textbf{Name (row A)} & \textbf{Year} & \textbf{ALG ID} & \textbf{Name (row B)} & \textbf{Year} & \textbf{Audit note}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ALG ID} & \textbf{Name (row A)} & \textbf{Year} & \textbf{ALG ID} & \textbf{Name (row B)} & \textbf{Year} & \textbf{Audit note}\\
+\midrule
+\endhead
+\midrule\multicolumn{7}{r}{\textit{Continued on next page}}\\\endfoot
+\bottomrule\endlastfoot
+ALG-0133 & Virus Optimization Algorithm (VOA) & 2009 & ALG-0347 & Virus Optimization Algorithm (VOA) & 2016 & Identical name; chronology candidate (7 years apart).\\
+ALG-0151 & Bat Inspired Algorithm (BIA) & 2010 & ALG-0226 & Bat-Inspired Algorithm (BI) & 2013 & Near-identical name (hyphenation); distinct acronym given.\\
+ALG-0167 & Galaxy-Based Search Algorithm (GBSA) & 2011 & ALG-0179 & Galaxy Based Search Algorithm (GBS) & 2011 & Same year; name differs only by hyphenation.\\
+ALG-0174 & Artificial Chemical Reaction Optimization Algorithm & 2011 & ALG-0177 & Artificial Chemical Reaction Optimization Algorithm & 2011 & Identical name and year; strongest duplicate candidate in the catalogue.\\
+ALG-0349 & Raven Roosting Optimization Algorithm (RROA) & 2016 & ALG-0365 & Raven Roosting Optimization Algorithm (RRO) & 2016 & Same year; name identical apart from acronym form.\\
+ALG-0243 & Seven-Spot Ladybird Optimization (SSLO) & 2013 & ALG-0253 & Seven-spot Labybird Optimization (SLO) & 2013 & Same year; second entry contains an apparent typographic variant.\\
+ALG-0350 & Ring Seal Search (RSS) & 2016 & ALG-0369 & Ringed Seal Search (RSS) & 2016 & Same year and acronym; name differs by one letter.\\
+ALG-0826 & Bird of Prey-Based Optimization (BPBO) & 2025 & ALG-0858 & Birds of Prey-based Optimization & 2025 & Same year; singular/plural and capitalization variant.\\
+ALG-0108 & Slime Mold Optimization Algorithm (SMOA) & 2008 & ALG-0531 & Slime Mould Algorithm (SMA) & 2020 & Different spelling of Mold/Mould and different acronym; flagged for primary-source review rather than treated as a confirmed duplicate.\\
+ALG-0541 & Coronavirus Optimization Algorithm (COA) & 2020 & ALG-0664 & Coronavirus Optimization Algorithm (COVIDOA) & 2022 & Same core name, different acronym and year; flagged for primary-source review.\\
+\end{longtable}
+
+This audit was produced by automated name-similarity and year-proximity screening over the catalogue rows below; it is a first-pass flag, not a merge decision. Acronym collisions in which the full algorithm names are clearly different (for example, the six distinct algorithms abbreviated ``SA'': Simulated Annealing, Simplex Algorithm, Superbug Algorithm, Scientific Algorithms, Strawberry Algorithm, and Spy Algorithm) are excluded from this table because they are a documented feature of field-wide naming convergence rather than evidence of duplicate catalogue rows, consistent with the main text's treatment of acronyms as non-identifying.
+
+\begin{landscape}
+\scriptsize
+\begin{longtable}{P{1.7cm}rP{10.0cm}rP{7.2cm}}
+\caption{Complete historical catalogue with stable identifiers.}\\
+\toprule
+\textbf{ALG ID} & \textbf{SN} & \textbf{Algorithm} & \textbf{Year} & \textbf{Author(s)}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{ALG ID} & \textbf{SN} & \textbf{Algorithm} & \textbf{Year} & \textbf{Author(s)}\\
+\midrule
+\endhead
+\midrule\multicolumn{5}{r}{\textit{Continued on next page}}\\\endfoot
+\bottomrule\endlastfoot
+ALG-0001 & 1 & Evolutionary Programming (EP) & 1965 & Fogel \\
+ALG-0002 & 2 & Evolution Strategies (ES) & 1973 & I. Rechenberg \\
+ALG-0003 & 3 & Genetic Algorithm (GA) & 1975 & Holland \\
+ALG-0004 & 4 & Scatter Search Algorithm (SSA) & 1977 & Glover \\
+ALG-0005 & 5 & Genetic Programming (GP) & 1981 & D. A. Hopwood \\
+ALG-0006 & 6 & Simulated Annealing (SA) & 1983 & Kirkpatrick et al. \\
+ALG-0007 & 7 & Tabu Search Algorithm (TSA) & 1986 & F. Glover \\
+ALG-0008 & 8 & Boids & 1987 & Reynolds \\
+ALG-0009 & 9 & Stochastic Searching Network (SSN) & 1989 & J. M. Bishop \\
+ALG-0010 & 10 & Memetic Algorithm (MA) & 1989 & Moscato et al. \\
+ALG-0011 & 11 & Distributed Evolution Strategies & 1990 & G. Rudolph \\
+ALG-0012 & 12 & Cultural Algorithm (CA) & 1991 & R. G. Reynolds \\
+ALG-0013 & 13 & Ant Colony Optimization (ACO) & 1992 & Dorigo et al. \\
+ALG-0014 & 14 & Great Deluge Algorithm (GDA) & 1993 & Dueck \\
+ALG-0015 & 15 & Shuffled Complex Evolution (SCE) & 1993 & Duan et al. \\
+ALG-0016 & 16 & Greedy Randomized Adaptive Search Procedures & 1995 & T. A. Feo et al. \\
+ALG-0017 & 17 & Particle Swarm Optimization (PSO) & 1995 & Eberhart and Kennedy \\
+ALG-0018 & 18 & Old Bachelor Acceptance (OBA) & 1995 & Hu et al. \\
+ALG-0019 & 19 & Self-Driven Particles (SDP) & 1995 & Vicsek et al. \\
+ALG-0020 & 20 & Cross Entropy Method (GLS) & 1996 & S. Robinson et al. \\
+ALG-0021 & 21 & Bacterial Evolutionary Algorithm (BEA) & 1996 & Numaoka \\
+ALG-0022 & 22 & Guided Local Search (LS) & 1996 & C. Voudouris and E. Tsang \\
+ALG-0023 & 23 & Differential Evolution (DE) & 1997 & Storn and Price \\
+ALG-0024 & 24 & Variable Neighborhood Descent Algorithm (VND) & 1997 & Hertz and Mittaz \\
+ALG-0025 & 25 & Variable Neighborhood Search (VNS) & 1997 & P. Hansen et al. \\
+ALG-0026 & 26 & Bee System & 1998 & Sato and Hagiwara \\
+ALG-0027 & 27 & Photosynthetic Learning Algorithm (PLA) & 1998 & H. Murase and A. Wadano \\
+ALG-0028 & 28 & Chaos Optimization Algorithm (COA) & 1998 & Jiang \\
+ALG-0029 & 29 & Grammatical Evolution & 1998 & C. Ryan et al. \\
+ALG-0030 & 30 & Shark Search Algorithm (SSA) & 1998 & Hersovici et al. \\
+ALG-0031 & 31 & Sheep Flocks Heredity Model (SFHD) & 1999 & Nara et al. \\
+ALG-0032 & 32 & Extremal Optimization (EO) & 1999 & Boettcher and Percus \\
+ALG-0033 & 33 & Gravitational Clustering Algorithm (GCA) & 1999 & Kundu \\
+ALG-0034 & 34 & Clonal Selection Algorithm (CSA) & 2000 & De Castro and Von Zuben \\
+ALG-0035 & 35 & Photosyntetic Algorithm (PA) & 2000 & H. Murase \\
+ALG-0036 & 36 & Gene Expression Programming (GEP) & 2001 & C Ferreira \\
+ALG-0037 & 37 & Marriage In Honey Bees Optimization (MBO) & 2001 & H. A. Abbass \\
+ALG-0038 & 38 & Bacterial Foraging Algorithm (BFA) & 2002 & Passino \\
+ALG-0039 & 39 & Bacteria Chemotaxis Algorithm (BCA) & 2002 & M. O. Tokhi and J. Figwer \\
+ALG-0040 & 40 & Popmusic Algorithm (POPMUSIC) & 2002 & Taillard and Voss \\
+ALG-0041 & 41 & Social Cognitive Optimization (SCO) & 2002 & Xie et al. \\
+ALG-0042 & 42 & Biomimicry of Social Foraging Bactera for Distributed & 2002 & Passino \\
+ALG-0043 & 43 & Hysteresis for Optimization (HO) & 2002 & Zarand et al. \\
+ALG-0044 & 44 & Gene Expression (GE) & 2002 & Ferreira \\
+ALG-0045 & 45 & Bee Colony Optimization (BCO) & 2003 & P. Lučić and D. Teodorović \\
+ALG-0046 & 46 & Iterative Local Search (ILS) & 2003 & H. R. Lourenço et al. \\
+ALG-0047 & 47 & Fish Swarm Algorithm (AFSA) & 2003 & Li \\
+ALG-0048 & 48 & Covariance Matrix Adaptation–Evolution Strategy & 2003 & Hansen et al. \\
+ALG-0049 & 49 & Society and Civilization (SC) & 2003 & T. Ray and K. M. Liew \\
+ALG-0050 & 50 & Artificial Immune System (AIS) & 2003 & L. N. de Castro et al. \\
+ALG-0051 & 51 & Queen-bee Evolution (QBE) & 2003 & Jung \\
+ALG-0052 & 52 & Electromagnetism-Like Mechanism Optimization & 2003 & Birbil and Fang \\
+ALG-0053 & 53 & Population Migration Algorithm (PMA) & 2003 & Yonghua Zhou et al. \\
+ALG-0054 & 54 & Beehive Algorithm (BHA) & 2004 & H. F. Wedde et al \\
+ALG-0055 & 55 & Self-Organizing Migrating Algorithm (SOMA) & 2004 & Zelinka \\
+ALG-0056 & 56 & Artificial Chemical Process (ACP) & 2004 & Irizarry \\
+ALG-0057 & 57 & The Bee Algorithm (TBA) & 2005 & D. T. Pham et al. \\
+ALG-0058 & 58 & Glowworm Swarm Optimization (GSO) & 2005 & K.N. Krishnanand et al. \\
+ALG-0059 & 59 & Particle Collision Algorithm (PCA) & 2005 & W. F. Sacco et al. \\
+ALG-0060 & 60 & Dendritic Cells Algorithm (DCA) & 2005 & Greensmith et al. \\
+ALG-0061 & 61 & Relaxation Induced Neighborhood Search (RINS) & 2005 & E. Danna et al. \\
+ALG-0062 & 62 & Wasp Swarm Optimization (WSO) & 2005 & Pinto et al. \\
+ALG-0063 & 63 & Harmony Search (HS) & 2005 & Lee and Geem \\
+ALG-0064 & 64 & Virtual Bees Algorithm (VBA) & 2005 & Yang \\
+ALG-0065 & 65 & Space Gravitational Algorithm (SGA) & 2005 & Hsiao et al. \\
+ALG-0066 & 66 & Shuffled Frog-Leaping Algorithm (SFLA) & 2006 & Eusuff et al. \\
+ALG-0067 & 67 & Big Bang–Big Crunch (BBC) & 2006 & Erol and Eksin \\
+ALG-0068 & 68 & Cat Swarm Optimization (CSO) & 2006 & Chu et al. \\
+ALG-0069 & 69 & Flocking base Algorithm (FA) & 2006 & X. Cui et al. \\
+ALG-0070 & 70 & Honey-bees Mating Optimization Algorithm (HBMO) & 2006 & A. Afshar et al. \\
+ALG-0071 & 71 & Dynamic Bacterial Foraging Algorithm (DBFA) & 2006 & W. J. Tang et al. \\
+ALG-0072 & 72 & Small-World Optimization Algorithm (SWOA) & 2006 & H. Du, X. Wu et al. \\
+ALG-0073 & 73 & Saplings Growing Up Algorithm (SGUA) & 2006 & Karci et al. \\
+ALG-0074 & 74 & Weed Colonization Optimization (WCO) & 2006 & Mehrabian and Lucas \\
+ALG-0075 & 75 & Membrane Algorithm (MA) & 2006 & Nishida \\
+ALG-0076 & 76 & Virtual Ants Algorithm (VAA) & 2006 & Yang et al. \\
+ALG-0077 & 77 & Small World Optimization (SWO) & 2006 & Du et al. \\
+ALG-0078 & 78 & Invasive Weed Optimization (IWO) & 2006 & A. R. Mehrabian et al. \\
+ALG-0079 & 79 & Seeker Optimization Algorithm (SOA) & 2006 & C. Dai et al. \\
+ALG-0080 & 80 & Stochastic Diffusion Search (SDS) & 2007 & J. M. Bishop \\
+ALG-0081 & 81 & Imperialist Competitive Algorithm (ICA) & 2007 & e. Atashpaz-Gargari et al. \\
+ALG-0082 & 82 & Monkey Search Algorithm (MSA) & 2007 & A. Mucherino et al. \\
+ALG-0083 & 83 & River Formation Dynamics (RFD) & 2007 & Rabanal et al. \\
+ALG-0084 & 84 & Bacterial Swarming Algorithm (BSA) & 2007 & Tang et al. \\
+ALG-0085 & 85 & Bacterial-GA Foraging (BF) & 2007 & Chen et al. \\
+ALG-0086 & 86 & Parliamentary Optimization Algorithm (POA) & 2007 & Borji and Hamichi \\
+ALG-0087 & 87 & Simplex Algorithm (SA) & 2007 & J. P. Pedroso \\
+ALG-0088 & 88 & Good Lattice Swarm Algorithm (GLSA) & 2007 & S. Su et al. \\
+ALG-0089 & 89 & Central Force Optimization (CFO) & 2007 & R, Formato \\
+ALG-0090 & 90 & Human Evolutionary Model (HEM) & 2007 & Montiel et al. \\
+ALG-0091 & 91 & Integrated Radiation Optimization (IRO) & 2007 & Chuang and Jiang \\
+ALG-0092 & 92 & Wolf Pack Search (WPS) & 2007 & Yang et al. \\
+ALG-0093 & 93 & Honeybee Social Foraging (HSF) & 2007 & Quijano and Passino \\
+ALG-0094 & 94 & Artificial Bee Colony (ABC) & 2007 & Karaboga and Basturk \\
+ALG-0095 & 95 & MOEA/D & 2007 & Zhang and Li \\
+ALG-0096 & 96 & Fast Bacterial Swarming Algorithm (FBSA) & 2008 & Chu et al. \\
+ALG-0097 & 97 & Biogeography-based Optimization (BBO) & 2008 & D. Simon \\
+ALG-0098 & 98 & Oppositional Biogeography-based Optimization & 2008 & M. Ergezer et al. \\
+ALG-0099 & 99 & Bar Systems (BS) & 2008 & Del Acebo and de-la Rosa \\
+ALG-0100 & 100 & Catfish Particle Swarm Optimization (CatfishPSO) & 2008 & Chuang et al. \\
+ALG-0101 & 101 & Goose Team Optimizer (GTO) & 2008 & Wang and Wang \\
+ALG-0102 & 102 & Harmony Element Algorithm (HEA) & 2008 & Cui et al. \\
+ALG-0103 & 103 & Fish-School Search (FSS) & 2008 & C. J. A. Bastos Filho et al. \\
+ALG-0104 & 104 & Roach Infestation Optimization (RIO) & 2008 & Havens et al. \\
+ALG-0105 & 105 & Viral Search (VS) & 2008 & Cortes et al \\
+ALG-0106 & 106 & Jumping frogs optimization & 2008 & F. J. M. Garcia et al. \\
+ALG-0107 & 107 & Stochastic Focusing Search (SFS) & 2008 & Weibo et al. \\
+ALG-0108 & 108 & Slime Mold Optimization Algorithm (SMOA) & 2008 & Monismith and Mayfield \\
+ALG-0109 & 109 & Plant Growth Optimization (PGO) & 2008 & Cai et al. \\
+ALG-0110 & 110 & Multi-Particle Collision Algorithm (M-PCA) & 2008 & da Luz et al. \\
+ALG-0111 & 111 & Oriented Search Algorithm (OSA) & 2008 & Zhang et al. \\
+ALG-0112 & 112 & Magnetic Optimization Algorithm (MFO) & 2008 & M. H. Tayarani-N et al. \\
+ALG-0113 & 113 & Viral Systems Optimization (VS) & 2008 & Cortés et al. \\
+ALG-0114 & 114 & Bee Collecting Poleen Algorithm (BCPA) & 2008 & Lu and Zhou \\
+ALG-0115 & 115 & Artificial Beehive Algorithm (ABA) & 2009 & Munoz et al. \\
+ALG-0116 & 116 & Artificial Physics Optimization (APO) & 2009 & Xie et al. \\
+ALG-0117 & 117 & Bee Colony-inspired Algorithm (BCiA) & 2009 & S. Häckel et al. \\
+ALG-0118 & 118 & Gravitational Emulation Local Search (GELS) & 2009 & Barzegar et al. \\
+ALG-0119 & 119 & Cuckoo Search (CS) & 2009 & Yang and Deb \\
+ALG-0120 & 120 & Gravitational Search Algorithm (GSA) & 2009 & Rashedi et al. \\
+ALG-0121 & 121 & Firefly Algorithm (FA) & 2009 & X. S. Yang \\
+ALG-0122 & 122 & League Championship Algorithm (LCA) & 2009 & A. H. Kashan et al. \\
+ALG-0123 & 123 & Dolphin Partner Optimization (DPO) & 2009 & Shiqin et al. \\
+ALG-0124 & 124 & Dialectic Search (DS) & 2009 & Kadioglu and Sellmann \\
+ALG-0125 & 125 & Human-Inspired Algorithms (HIA) & 2009 & L. M. Zhang et al. \\
+ALG-0126 & 126 & Artificial Searching Swarm Algorithm (ASSA) & 2009 & Chen et al. \\
+ALG-0127 & 127 & Group Counseling Optimization (GCO) & 2009 & M. A. Eita et al. \\
+ALG-0128 & 128 & Bacterial Foraging Optimization Algorithm (BFOA) & 2009 & Das et al. \\
+ALG-0129 & 129 & Guided Pareto Local Search & 2009 & A. Alsheddy and E. Tsang \\
+ALG-0130 & 130 & Frog call-inspired self-organizing anti-phase synchronization & 2009 & Mutazono et al. \\
+ALG-0131 & 131 & Group Search Optimizer (GSO) & 2009 & He et al. \\
+ALG-0132 & 132 & Intelligent Water Drop Algorithm (IWD) & 2009 & Shah-Hosseini \\
+ALG-0133 & 133 & Virus Optimization Algorithm (VOA) & 2009 & Juarez et al. \\
+ALG-0134 & 134 & Swarm Inspired Projection Algorithm (SIP) & 2009 & Su et al. \\
+ALG-0135 & 135 & Simulated Bee Colony (SBC) & 2009 & McCaffrey \\
+ALG-0136 & 136 & Locust Swarm Optimization (LSO) & 2009 & S. Chen \\
+ALG-0137 & 137 & Key Cutting Algorithm (KCA) & 2009 & J. Qin \\
+ALG-0138 & 138 & Bumblebees & 2009 & F. Comellas et al. \\
+ALG-0139 & 139 & A Naïve Five-Element String Algorithm & 2009 & Y. Cui et al. \\
+ALG-0140 & 140 & Asexual Reproduction Optimization (ARO) & 2010 & Farasat et al. \\
+ALG-0141 & 141 & Bee Swarm Optimization (BSO) & 2010 & Akbari et al. \\
+ALG-0142 & 142 & Charged System Search (CSS) & 2010 & Kaveh and Talatahari \\
+ALG-0143 & 143 & Gravitational Field Algorithm (GFA) & 2010 & Zheng et al. \\
+ALG-0144 & 144 & Fireworks Algorithm (FA) & 2010 & Tan and Zhu \\
+ALG-0145 & 145 & Eagle Strategy (ES) & 2010 & Yang and Deb \\
+ALG-0146 & 146 & Wind Driven Optimization (WDO) & 2010 & Bayraktar et al. \\
+ALG-0147 & 147 & Consultant-Guided Search (CGS) & 2010 & S. Iordache \\
+ALG-0148 & 148 & Social Emotional Optimization Algorithm (SEOA) & 2010 & Xu et al. \\
+ALG-0149 & 149 & Hierarchical Swarm Model (HSM) & 2010 & H. Chen, Y. Zhu et al. \\
+ALG-0150 & 150 & Reincarnation Algorithm (RA) & 2010 & A. Sharma \\
+ALG-0151 & 151 & Bat Inspired Algorithm (BIA) & 2010 & Yang \\
+ALG-0152 & 152 & Flow shop Scheduling Problem (FSSP) & 2010 & M. K. Sayadi et al. \\
+ALG-0153 & 153 & Grenade Explosion Method (GEM) & 2010 & Ahrari and Atai \\
+ALG-0154 & 154 & Human Group Formation (HGF) & 2010 & Thammano and Moolwong \\
+ALG-0155 & 155 & Hunting Search (HuS) & 2010 & Oftadeh et al. \\
+ALG-0156 & 156 & Light Ray Optimization (LRO) & 2010 & Shen and Li \\
+ALG-0157 & 157 & Social Cognitive Optimization Algorithm (SCOA) & 2010 & Wei et al. \\
+ALG-0158 & 158 & Termite Colony Optimizer (TCO) & 2010 & R. Hedayatzadeh et al. \\
+ALG-0159 & 159 & Lambda Algorithm (LA) & 2010 & Cui et al. \\
+ALG-0160 & 160 & Bumble Bees Mating Optimization (BBMO) & 2010 & Marinakis et al. \\
+ALG-0161 & 161 & Coalition-based metaheuristic & 2010 & D. Meignan et al. \\
+ALG-0162 & 162 & Brain Storm Optimization (BSO) & 2011 & Y. Shi \\
+ALG-0163 & 163 & Bioluminescent Swarm Optimization Algorithm & 2011 & D.R. de Oliveira et al. \\
+ALG-0164 & 164 & Cockroach Swarm Optimization (CSO) & 2011 & L. Cheng, Z. B. Wang et al. \\
+ALG-0165 & 165 & Group Escape Behavior (GEB) & 2011 & H. Min and Z. Wang \\
+ALG-0166 & 166 & Group Leaders Optimization Algorithm (GIOA) & 2011 & A. Daskin and S. Kais \\
+ALG-0167 & 167 & Galaxy-Based Search Algorithm (GBSA) & 2011 & H. Shah-Hosseini \\
+ALG-0168 & 168 & Spiral Dynamics Inspired Optimization (SDIO) & 2011 & K. Tamura and K. Yasuda \\
+ALG-0169 & 169 & Plant Propagation Algorithm (PPA) & 2011 & A. Salhi and E. S. Fraga \\
+ALG-0170 & 170 & Eco-Inspired Evolutionary Algorithm (EIEA) & 2011 & R. S. Parpinelli et al. \\
+ALG-0171 & 171 & Gravitational Interactions Optimization (GIO) & 2011 & J. J. Flores and R. López \\
+ALG-0172 & 172 & Stem Cells Algorithm (SCA) & 2011 & M. Taherdangkoo et al. \\
+ALG-0173 & 173 & Water-Flow Algorithm (WFA) & 2011 & T. T. Hieu \\
+ALG-0174 & 174 & Artificial Chemical Reaction Optimization Algorithm & 2011 & Alatas \\
+ALG-0175 & 175 & Anarchic Society Optimization (ASO) & 2011 & A. Ahmadi-Javid \\
+ALG-0176 & 176 & Artificial Photosynthesis and Phototropism Mechanism & 2011 & Cui and Cai \\
+ALG-0177 & 177 & Artificial Chemical Reaction Optimization Algorithm & 2011 & B. Alatas \\
+ALG-0178 & 178 & Cuckoo Optimization Algorithm (COA) & 2011 & Rajabioun \\
+ALG-0179 & 179 & Galaxy Based Search Algorithm (GBS) & 2011 & Shah-Hosseini \\
+ALG-0180 & 180 & Melody Search (MS) & 2011 & Ashrafi and Dariane \\
+ALG-0181 & 181 & Artificial Plants Optimization Algorithm (APO) & 2011 & Zhao et al. \\
+ALG-0182 & 182 & Spiral Dynamics Optimization (SDO) & 2011 & Tamura and Yasuda \\
+ALG-0183 & 183 & Teaching-Learning Based Optimization Algorithm & 2011 & Rao et al. \\
+ALG-0184 & 184 & Wisdom of Artificial Crowds (WoAC) & 2011 & Yampolskiy et al. \\
+ALG-0185 & 185 & Wolf Colony Algorithm (WCA) & 2011 & Liu et al. \\
+ALG-0186 & 186 & Mox Optimization Algorithm (MOX) & 2011 & Arif et al. \\
+ALG-0187 & 187 & Water-Flow Algorithm Optimization (WFO) & 2011 & Tran and Ng \\
+ALG-0188 & 188 & Bean Optimization Algorithm (BOA) & 2012 & X. Zhang \\
+ALG-0189 & 189 & Artificial Tribe Algorithm (ATA) & 2012 & T. Chen, Y. Wan et al. \\
+ALG-0190 & 190 & Bat Intelligence (BI) & 2012 & B. Malakooti \\
+ALG-0191 & 191 & Collective Animal Behavior (CAB) & 2012 & E. Cuevas et al. \\
+ALG-0192 & 192 & Cloud Model-based Differential Evolution Algorithm & 2012 & C. Zhu and J. Ni \\
+ALG-0193 & 193 & Flower Pollination Algorithm (FPA) & 2012 & X. S. Yang \\
+ALG-0194 & 194 & Flock by Leader (FL) & 2012 & A. Bellaachia et al. \\
+ALG-0195 & 195 & Fruit Fly Optimization Algorithm (FFOA) & 2012 & W. T. Pan \\
+ALG-0196 & 196 & Differential Search Algorithm (DSA) & 2012 & P. Civicioglu \\
+ALG-0197 & 197 & Ray Optimization (RO) & 2012 & A. Kaveh et al. \\
+ALG-0198 & 198 & Mine Blast Algorithm (MBA) & 2012 & A. Sadollah et al. \\
+ALG-0199 & 199 & Great Salmon Run (GSR) & 2012 & A. Mozaffari and A. Fathi \\
+ALG-0200 & 200 & Japanese Tree Frogs (JTFC) & 2012 & I. Aihara et al. \\
+ALG-0201 & 201 & Community of Scientist Optimization (CSO) & 2012 & A. Milani and V. Santucci \\
+ALG-0202 & 202 & Quantum-inspired Bacterial Swarming Optimization & 2012 & J. Cao and H. Gao \\
+ALG-0203 & 203 & Intelligent Gravitational Search Algorithm (IGSA) & 2012 & H. Askari and S. H. Zahiri \\
+ALG-0204 & 204 & Lion Pride Optimizer (LPO) & 2012 & B. Wang and XP Jin et al. \\
+ALG-0205 & 205 & Zombie Survival Optimization (ZSO) & 2012 & H. T. Nguyen and B. Bhanu \\
+ALG-0206 & 206 & Superbug Algorithm (SA) & 2012 & C. Anandaraman \\
+ALG-0207 & 207 & Hoopoe Heuristic (HH) & 2012 & El-Dosuky et al. \\
+ALG-0208 & 208 & Japanese Tree Frogs Calling Algorithm (JTFCA) & 2012 & Hernández and Blum \\
+ALG-0209 & 209 & Migrating Birds Optimization (MBO) & 2012 & Duman et al. \\
+ALG-0210 & 210 & Bacterial Colony Optimization (BCO) & 2012 & Niu and Wang \\
+ALG-0211 & 211 & Electro-Magnetism Optimization (EMO) & 2012 & Cuevas et al. \\
+ALG-0212 & 212 & Krill Herd (KH) & 2012 & Gandomi and Alavi \\
+ALG-0213 & 213 & Paddy Field Algorithm (PFA) & 2012 & Kong et al. \\
+ALG-0214 & 214 & Pearl Hunting Algorithm (PHA) & 2012 & Chan et al. \\
+ALG-0215 & 215 & Simple Optimization (SO) & 2012 & Hasançebi and K Azad \\
+ALG-0216 & 216 & Termite-hill Algorithm (ThA) & 2012 & Zungeru et al. \\
+ALG-0217 & 217 & Unconscious Search (US) & 2012 & Ardjmand et al. \\
+ALG-0218 & 218 & Wolf Search Algorithm (WSA) & 2012 & R. Tang et al. \\
+ALG-0219 & 219 & Variable Mesh Optimization (VMO) & 2012 & Puris et al. \\
+ALG-0220 & 220 & Water Cycle Algorithm (WCA) & 2012 & Eskandar et al. \\
+ALG-0221 & 221 & Weightless Swarm Algorithm (WSA) & 2012 & Ting et al. \\
+ALG-0222 & 222 & Frog Call inspired Algorithm (FCA) & 2013 & D. Sutantyo et al. \\
+ALG-0223 & 223 & Artificial Plant Optimization Algorithm (APOA) & 2013 & Z. Cui and X. Cai \\
+ALG-0224 & 224 & Artificial Reaction Algorithm (ARA) & 2013 & Melin et al. \\
+ALG-0225 & 225 & Adaptive Social Behavior Optimization (ASBO) & 2013 & M. K. Singh \\
+ALG-0226 & 226 & Bat-Inspired Algorithm (BI) & 2013 & O. Hasançebi et al. \\
+ALG-0227 & 227 & Co-Operation Of Biology Related Algorithm (COBRA) & 2013 & S. Akhmedova et al. \\
+ALG-0228 & 228 & Global Neighborhood Algorithm (GNA) & 2013 & A. Alazzam et al. \\
+ALG-0229 & 229 & Mosquito Host-Seeking Algorithm (MHSA) & 2013 & X. Feng, F. C. M. Lau et al. \\
+ALG-0230 & 230 & Mobility Aware-Termite (MAT) & 2013 & K. Manjappa et al. \\
+ALG-0231 & 231 & Backtracking Search Optimization (BSO) & 2013 & P. Civicioglu \\
+ALG-0232 & 232 & Black Holes Algorithm (BHA) & 2013 & M. Nemati et al. \\
+ALG-0233 & 233 & Social Spider Optimization (SSO) & 2013 & E. Cuevas et al. \\
+ALG-0234 & 234 & Artificial Cooperative Search (ACS) & 2013 & P. Civicioglu \\
+ALG-0235 & 235 & Gases Brownian Motion Optimization (GBMO) & 2013 & M. Abdechiri et al. \\
+ALG-0236 & 236 & Swallow Swarm Optimization Algorithm (SSOA) & 2013 & M. Neshat et al. \\
+ALG-0237 & 237 & Penguins Search Optimization Algorithm (PSOA) & 2013 & Y. Gheraibia et al. \\
+ALG-0238 & 238 & Egyptian Vulture Optimization (EVO) & 2013 & C. Sur et al. \\
+ALG-0239 & 239 & Atmosphere Clouds Model Optimization (ACMO) & 2013 & G. W. Yan and Z. Hao et al. \\
+ALG-0240 & 240 & Magnetotactic Bacteria Optimization Algorithm & 2013 & H. Mo and L. Xu \\
+ALG-0241 & 241 & Blind, Naked Mole-Rats Algorithm & 2013 & M. Taherdangkoo et al. \\
+ALG-0242 & 242 & Soccer Game Optimization (SGO) & 2013 & H. D. Purnomo et al. \\
+ALG-0243 & 243 & Seven-Spot Ladybird Optimization (SSLO) & 2013 & P. Wang et al. \\
+ALG-0244 & 244 & Cuttlefish Algorithm (CA) & 2013 & A. S. Eesa et al. \\
+ALG-0245 & 245 & African Wild Dog Algorithm (AWDA) & 2013 & M. K. Marichelvam et al. \\
+ALG-0246 & 246 & Mussels Wandering Optimization (MWO) & 2013 & J. An and Q. Kang et al. \\
+ALG-0247 & 247 & Swine Influenza Models Based Optimization (SIMBO) & 2013 & S. S. Pattnaik et al. \\
+ALG-0248 & 248 & Tree Physiology Optimization (TPO) & 2013 & A. H. Halim and I. Ismail \\
+ALG-0249 & 249 & Bat Algorithm (BA) & 2013 & Yang and He \\
+ALG-0250 & 250 & Dolphin Echolocation (DE) & 2013 & Kaveh and Farhoudi \\
+ALG-0251 & 251 & Magnetic Charged System Search (MCSS) & 2013 & Kaveh et al. \\
+ALG-0252 & 252 & OptBees (OB) & 2013 & Maia et al. \\
+ALG-0253 & 253 & Seven-spot Labybird Optimization (SLO) & 2013 & Wang et al. \\
+ALG-0254 & 254 & Swallow Swarm Optimizer (SWO) & 2013 & Neshat et al. \\
+ALG-0255 & 255 & Backtracking Search Algorithm (BSA) & 2013 & V. Angelova et al. \\
+ALG-0256 & 256 & Animal Migration Optimization (AMO) & 2013 & Y. Cao, X. Li et al. \\
+ALG-0257 & 257 & Green Building Energy Optimization Systems & 2013 & Q. Wang, G. Chen et al. \\
+ALG-0258 & 258 & Animal Behavior Hunting (ABH) & 2014 & Naderi et al. \\
+ALG-0259 & 259 & Artificial Raindrop Algorithm (ARA) & 2014 & Jiang et al. \\
+ALG-0260 & 260 & Grey Wolf Optimizer (GWO) & 2014 & Mirjalili et al. \\
+ALG-0261 & 261 & Symbiosis Organisms Search (SOS) & 2014 & M. Y. Cheng et al. \\
+ALG-0262 & 262 & Colliding Bodies Optimization (CBO) & 2014 & Kaveh and Mahdavi \\
+ALG-0263 & 263 & Chicken Swarm Optimization (CSO) & 2014 & Meng et al. \\
+ALG-0264 & 264 & Spider Monkey Optimization (SMO) & 2014 & Bansal et al. \\
+ALG-0265 & 265 & Interior Search Algorithm (ISA) & 2014 & Gandomi \\
+ALG-0266 & 266 & Coral Reefs Optimization Algorithm (CRO) & 2014 & S. Salcedo-Sanz et al. \\
+ALG-0267 & 267 & Bird Mating Optimizer (BMO) & 2014 & A. Askarzadeh \\
+ALG-0268 & 268 & Exchange Market Algorithm (EMA) & 2014 & N. Ghorbani and E. Babaei \\
+ALG-0269 & 269 & Forest Optimization Algorithm (FOA) & 2014 & Ghaemi et al. \\
+ALG-0270 & 270 & Keshtel Algorithm (KA) & 2014 & Hajiaghaei and Aminnayeri \\
+ALG-0271 & 271 & Kaizen Programming (KP) & 2014 & De Melo \\
+ALG-0272 & 272 & Kinetic Gas Molecule Optimization (KGMO) & 2014 & S. Moein et al. \\
+ALG-0273 & 273 & Heart Algorithm (HA) & 2014 & A. Hatamlou \\
+ALG-0274 & 274 & Artificial Ecosystem Algorithm (AEA) & 2014 & Adham and Bentley \\
+ALG-0275 & 275 & Scientific Algorithms (SA) & 2014 & D. Felipe et al. \\
+ALG-0276 & 276 & Worm Optimization (WO) & 2014 & J. P. Arnaout \\
+ALG-0277 & 277 & Greedy Politics Optimization (GPO) & 2014 & J. S. M. L. Melvix \\
+ALG-0278 & 278 & Human Learning Optimization (HLO) & 2014 & L. Wang, H. N. et al. \\
+ALG-0279 & 279 & Soccer League Competition Algorithm (SLCA) & 2014 & N. Moosavian et al. \\
+ALG-0280 & 280 & Hyper-Spherical Search Algorithm (HSSA) & 2014 & H. Karami et al. \\
+ALG-0281 & 281 & Ecogeography-Based Optimization (EBO) & 2014 & Zheng et al. \\
+ALG-0282 & 282 & Pigeon-Inspired Optimization (PIO) & 2014 & Duan and Qiao \\
+ALG-0283 & 283 & Golden Ball Algorithm (GB) & 2014 & Osaba et al. \\
+ALG-0284 & 284 & Heart Optimization (HO) & 2014 & Hatamlou \\
+ALG-0285 & 285 & Hurricane Based Optimization Algorithm (HOA) & 2014 & Rbouh and El Imrani \\
+ALG-0286 & 286 & Method of Musical Composition (MMC) & 2014 & Mora-Gutiérrez et al. \\
+ALG-0287 & 287 & Predator–Prey Optimization (PPO) & 2014 & Narang et al. \\
+ALG-0288 & 288 & Radial Movement Optimization (RMO) & 2014 & Rahmani and Yusof \\
+ALG-0289 & 289 & States Matter Optimization Algorithm (SMOA) & 2014 & Cuevas et al. \\
+ALG-0290 & 290 & Strawberry Algorithm (SA) & 2014 & Merrikh-Bayat \\
+ALG-0291 & 291 & Artificial Root Foraging Algorithm (ARFA) & 2014 & L. Ma, K. Hu et al \\
+ALG-0292 & 292 & Ant Lion Optimization (ALO) & 2015 & Mirjalili \\
+ALG-0293 & 293 & Artificial Algae Algorithm (AAA) & 2015 & Uymaz et al. \\
+ALG-0294 & 294 & Artificial Showering Algorithm (ASA) & 2015 & Ali et al. \\
+ALG-0295 & 295 & Cricket Algorithm (CA) & 2015 & Canayaz and Karcı \\
+ALG-0296 & 296 & Moth-Flame Optimization Algorithm (MFO) & 2015 & S. Mirjalili \\
+ALG-0297 & 297 & Water Wave Optimization (WWO) & 2015 & Y. J. Zheng \\
+ALG-0298 & 298 & Elephant Herding Optimization (EHO) & 2015 & Wang et al. \\
+ALG-0299 & 299 & Earthworm Optimization Algorithm (EOA) & 2015 & G. G. Wang et al. \\
+ALG-0300 & 300 & Heat Transfer Search Algorithm (HTS) & 2015 & V. K. Patel et al. \\
+ALG-0301 & 301 & Ions Motion Algorithm (IMA) & 2015 & B. Javidy et al. \\
+ALG-0302 & 302 & Runner-Root Algorithm (RRA) & 2015 & F. Merrikh-Bayat \\
+ALG-0303 & 303 & Elephant Search Algorithm (ESA) & 2015 & Deb et al. \\
+ALG-0304 & 304 & Election Algorithm (EA) & 2015 & H. Emami et al. \\
+ALG-0305 & 305 & Locust Search (LS) & 2015 & Cuevas et al. \\
+ALG-0306 & 306 & Invasive Tumor Growth Optimization Algorithm & 2015 & D. Tang, S. Dong et al \\
+ALG-0307 & 307 & Jaguar Algorithm (JA) & 2015 & Chen et al. \\
+ALG-0308 & 308 & General Relativity Search Algorithm (GRSA) & 2015 & H. Beiranvand et al. \\
+ALG-0309 & 309 & Root Growth Optimizer (RGO) & 2015 & He et al. \\
+ALG-0310 & 310 & Bull Optimization Algorithm (BOA) & 2015 & O. Findik \\
+ALG-0311 & 311 & Prey-Predator Algorithm (PPA) & 2015 & Tilahun and Ong \\
+ALG-0312 & 312 & African Buffalo Optimization (ABO) & 2015 & Odili et al. \\
+ALG-0313 & 313 & Vortex Search Algorithm (VSA) & 2015 & Doğan and Ölmez \\
+ALG-0314 & 314 & Butterfly Optimizer(BO) & 2015 & Kumar et al. \\
+ALG-0315 & 315 & Gradient Evolution Algorithm (GE) & 2015 & Kuo and Zulvia \\
+ALG-0316 & 316 & Leaders and Followers Algorithm (LFA) & 2015 & Gonzalez-Fernandez et al. \\
+ALG-0317 & 317 & Lightning Search Algorithm (LSA) & 2015 & Shareef et al. \\
+ALG-0318 & 318 & Optics Inspired Optimization (OIO) & 2015 & Kashan \\
+ALG-0319 & 319 & Seed based Plant Propagation Algorithm (SPPA) & 2015 & Sulaiman and Salhi \\
+ALG-0320 & 320 & See-See Partidge Chicks Optimization (SSPCO) & 2015 & Omidvar et al. \\
+ALG-0321 & 321 & Stochastic Fractal Search (SFS) & 2015 & H. Salimi \\
+ALG-0322 & 322 & Tree Seed Algorithm (TSA) & 2015 & Kiran \\
+ALG-0323 & 323 & Search Group Algorithm (SGA) & 2015 & Gonçalves et al. \\
+ALG-0324 & 324 & Social Spider Algorithm (SSA) & 2015 & James and Li \\
+ALG-0325 & 325 & Adaptive Dimensional Search (ADS) & 2015 & O. Hasançebi et al. \\
+ALG-0326 & 326 & Alienated Ant Algorithm (AAA) & 2015 & A. Di Stefano et al. \\
+ALG-0327 & 327 & Artificial Fish Swarm Algorithm (AFSA) & 2015 & Q. He, X. Hu et al. \\
+ALG-0328 & 328 & Bottlenose Dolphin Optimizer (BDO) & 2015 & A. Srivastava and D. K. Das \\
+ALG-0329 & 329 & Shark Smell Optimization (SSO) & 2016 & O. Abedinia et al. \\
+ALG-0330 & 330 & Across Neighborhood Search (ANS) & 2016 & G. Wu \\
+ALG-0331 & 331 & Cricket Behavior-Based Algorithm (CBBA) & 2016 & A. Kazíková \\
+ALG-0332 & 332 & Competitive Optimization Algorithm (COOA) & 2016 & Sharafi et al. \\
+ALG-0333 & 333 & Cognitive Behavior Optimization Algorithm (COA) & 2016 & Li et al. \\
+ALG-0334 & 334 & Electromagnetic Field Optimization (EFO) & 2016 & Abedinpourshotorban et al. \\
+ALG-0335 & 335 & Football Game Algorithm (FGA) & 2016 & Fadakar and Ebrahimi \\
+ALG-0336 & 336 & Intrusive Tumor Growth Inspired Optimization & 2016 & D. Tang, S. Dong et al. \\
+ALG-0337 & 337 & Galactic Swarm Optimization (GSO) & 2016 & Muthiah-Nakarajan et al. \\
+ALG-0338 & 338 & Whale Optimization Algorithm (WOA) & 2016 & S. Mirjalili and A. Lewis \\
+ALG-0339 & 339 & Sine Cosine Algorithm (SSA) & 2016 & S. Mirjalili \\
+ALG-0340 & 340 & Dragonfly Algorithm (DA) & 2016 & S. Mirjalili \\
+ALG-0341 & 341 & Crow Search Algorithm (CSA) & 2016 & A. Askarzadeh \\
+ALG-0342 & 342 & Multi-Verse Optimizer (MVO) & 2016 & S. Mirjalili et al. \\
+ALG-0343 & 343 & Bird Swarm Algorithm (BSA) & 2016 & X. B. Meng et al. \\
+ALG-0344 & 344 & Virus Colony Search (VCS) & 2016 & Li et al. \\
+ALG-0345 & 345 & Root Tree Optimization Algorithm (RTO) & 2016 & Labbi et al. \\
+ALG-0346 & 346 & Sperm Whale Algorithm (SWA) & 2016 & Ebrahimi and Khamehchi \\
+ALG-0347 & 347 & Virus Optimization Algorithm (VOA) & 2016 & Y. C. Liang et al. \\
+ALG-0348 & 348 & Duelist Algorithm (DA) & 2016 & Biyanto et al. \\
+ALG-0349 & 349 & Raven Roosting Optimization Algorithm (RROA) & 2016 & A. Brabazon et al. \\
+ALG-0350 & 350 & Ring Seal Search (RSS) & 2016 & Saadi et al. \\
+ALG-0351 & 351 & Flying Elephant Algorithm (FEA) & 2016 & Xavier and Xavier \\
+ALG-0352 & 352 & Camel Algorithm (CA) & 2016 & Ibrahim and Ali \\
+ALG-0353 & 353 & Crystal Energy Optimization Algorithm (CEO) & 2016 & Feng et al. \\
+ALG-0354 & 354 & Passing Vehicle Search (PVS) & 2016 & Savsani and Savsani \\
+ALG-0355 & 355 & Tug Of War Optimization (TWO) & 2016 & Kaveh and Zolghadr \\
+ALG-0356 & 356 & Dynamic Virtual Bats Algorithm (DVBA) & 2016 & A. O. Topal and O. Altun \\
+ALG-0357 & 357 & Lion Optimization Algorithm (LOA) & 2016 & Yazdani and Jolai \\
+ALG-0358 & 358 & Natural Forest Regeneration Algorithm (NFR) & 2016 & Moez et al. \\
+ALG-0359 & 359 & Simulated Kalman Filter (SKF) & 2016 & Z. Ibrahim et al. \\
+ALG-0360 & 360 & Yin-Yang-Pair Optimization (YYPO) & 2016 & Punnathanam and Kotecha \\
+ALG-0361 & 361 & Virulence Optimization Algorithm (VOA) & 2016 & Jaderyan and Khotanlou \\
+ALG-0362 & 362 & FIFA Word Cup Competitions (FIFA) & 2016 & Razmjooy et al. \\
+ALG-0363 & 363 & Mosquito Flying Optimization (MFO) & 2016 & Alauddin \\
+ALG-0364 & 364 & Natural Aggregation Algorithm (NAA) & 2016 & Luo et al. \\
+ALG-0365 & 365 & Raven Roosting Optimization Algorithm (RRO) & 2016 & Brabazon et al. \\
+ALG-0366 & 366 & Red Deer Algorithm (RDA) & 2016 & Fard and Hajiaghaei k \\
+ALG-0367 & 367 & Water Evaporation Optimization (WEO) & 2016 & Kaveh and Bakhshpoori \\
+ALG-0368 & 368 & Shark Smell Algorithm (SSA) & 2016 & Abedinia et al. \\
+ALG-0369 & 369 & Ringed Seal Search (RSS) & 2016 & Saadi et al. \\
+ALG-0370 & 370 & Joint Operations Algorithm (JOA) & 2016 & G. Sun, R. Zhao et al. \\
+ALG-0371 & 371 & Less Is More Optimization (LIMO) & 2016 & C. D. Lindquist et al. \\
+ALG-0372 & 372 & Artificial Butterfly Optimization (ABO) & 2017 & Qi et al. \\
+ALG-0373 & 373 & Cyclical Parthenogenesis Algorithm (CPA) & 2017 & Kaveh and Zolghadr \\
+ALG-0374 & 374 & Deterministic Oscillatory Search (DOS) & 2017 & Archana et al. \\
+ALG-0375 & 375 & Lightning Attachment Procedure Optimization & 2017 & Nematollahi et al. \\
+ALG-0376 & 376 & Bison Behavior Algorithm (BBA) & 2017 & Kazikova et al. \\
+ALG-0377 & 377 & Drone Squadron Optimization (DSO) & 2017 & V. V. de Melo \\
+ALG-0378 & 378 & Human Behavior-Based Optimization (HBO) & 2017 & S. A. Ahmadi \\
+ALG-0379 & 379 & Vibrating Particles System (VPS) & 2017 & Kaveh and Ghazaan \\
+ALG-0380 & 380 & Spotted Hyena Optimizer (SHO) & 2017 & Dhiman and Kumar \\
+ALG-0381 & 381 & Salp Swarm Algorithm (SSA) & 2017 & Mirjalili et al. \\
+ALG-0382 & 382 & Grasshopper Optimization Algorithm (GOA) & 2017 & Saremi et al. \\
+ALG-0383 & 383 & Rain Fall Optimization Algorithm (RFO) & 2017 & Kaboli et al. \\
+ALG-0384 & 384 & Hydrological Cycle Algorithm (HCA) & 2017 & Wedyan et al. \\
+ALG-0385 & 385 & Killer Whale Algorithm (KWA) & 2017 & Biyanto et al. \\
+ALG-0386 & 386 & Camel Herd Algorithm (CHA) & 2017 & Al-Obaidi et al. \\
+ALG-0387 & 387 & Laying Chicken Algorithm (LCA) & 2017 & E. Hosseini \\
+ALG-0388 & 388 & Kidney-Inspired Algorithm (KIA) & 2017 & NS Jaddi et al. \\
+ALG-0389 & 389 & Golden Sine Algorithm (Gold-SA) & 2017 & Tanyildizi and Demir \\
+ALG-0390 & 390 & Sperm Motility Algorithm (SMA) & 2017 & Raouf and Hezam \\
+ALG-0391 & 391 & Thermal Exchange Optimization (TEO) & 2017 & Kaveh and Dadras \\
+ALG-0392 & 392 & Porcellio Scaber Algorithm (PSA) & 2017 & Y. Zhang, S. Li et al. \\
+ALG-0393 & 393 & Selfish Herd Optimizer (SHO) & 2017 & F. Fausto et al. \\
+ALG-0394 & 394 & Polar Bear Optimization Algorithm (PBO) & 2017 & D. Połap and M. Woźniak \\
+ALG-0395 & 395 & Sonar Inspired Optimization (SIO) & 2017 & Tzanetos and Dounias \\
+ALG-0396 & 396 & Weighted Superposition Attraction (WSA) & 2017 & A. Baykasoğlu et al \\
+ALG-0397 & 397 & Satin Bowerbird Optimizer (SBO) & 2017 & Moosavi and Bardsiri \\
+ALG-0398 & 398 & Fractal-Based Algorithm (FA) & 2017 & Kaedi \\
+ALG-0399 & 399 & Ideology Algorithm (IA) & 2017 & Huan et al. \\
+ALG-0400 & 400 & Improve Genetic Immune Algorithm (IGIA) & 2017 & Tayeb et al. \\
+ALG-0401 & 401 & Monarch Butterfly Optimization (MBO) & 2017 & Feng et al. \\
+ALG-0402 & 402 & Snap-Drift Cuckoo Search (SDCS) & 2017 & Rakhshani and Rahati \\
+ALG-0403 & 403 & Spring Search Algorithm (SSA) & 2017 & Dehghani et al. \\
+ALG-0404 & 404 & Surface Simplex Swarm Evolution Algorithm (SSSE) & 2017 & Quan and Shi \\
+ALG-0405 & 405 & Synergistic Fibroblast Optimization (SFO) & 2017 & Subashini et al. \\
+ALG-0406 & 406 & Water Evaporation Algorithm (WEA) & 2017 & Saha et al. \\
+ALG-0407 & 407 & Neuronal Communication Algorithm (NCA) & 2017 & A Gharebaghi et al. \\
+ALG-0408 & 408 & Star Graph Algorithm (SGA) & 2017 & Gharebaghi et al. \\
+ALG-0409 & 409 & Collective Decision Optimization Algorithm (CDOA) & 2017 & Zhang et al. \\
+ALG-0410 & 410 & Human Mental Search (HMS) & 2017 & Mousavirad et al. \\
+ALG-0411 & 411 & Hitchcock Bird-Inspired Algorithm (HBIA) & 2018 & R. G. Morais, et al. \\
+ALG-0412 & 412 & Owl Search Algorithm (OSA) & 2018 & M. Jain, S. Maurya et al. \\
+ALG-0413 & 413 & Social Engineering Optimizer (SEO) & 2018 & A. M. Fathollahi-Fard \\
+ALG-0414 & 414 & Artificial Atom Algorithm (A3) & 2018 & Karci \\
+ALG-0415 & 415 & Artificial Swarm Intelligence (ASI) & 2018 & Rosenberg and Willcox \\
+ALG-0416 & 416 & Bees Life Algorithm (BLA) & 2018 & Bitam et al. \\
+ALG-0417 & 417 & Beetle Swarm Optimization Algorithm (BSOA) & 2018 & Wang and Yang \\
+ALG-0418 & 418 & Brunsvigia Optimization Algorithm (BVOA) & 2018 & M. Ghaemidizaji et al. \\
+ALG-0419 & 419 & Car Tracking Optimization Algorithm (CTOA) & 2018 & Chen et al. \\
+ALG-0420 & 420 & Cheetah Based Algorithm (CBA) & 2018 & Klein et al. \\
+ALG-0421 & 421 & Cheetah Chase Algorithm (CCA) & 2018 & Goudhaman \\
+ALG-0422 & 422 & Chaotic Crow Search Algorithm (CCSA) & 2018 & R. M. Rizk-Allah et al. \\
+ALG-0423 & 423 & Circular Structures of Puffer Fish Algorithm (CSPF) & 2018 & Catalbas and Gulten \\
+ALG-0424 & 424 & Competitive Learning Algorithm (CLA) & 2018 & Afroughinia and Kardehi M \\
+ALG-0425 & 425 & Cricket Chirping Algorithm (CCA) & 2018 & Deuri and Sathya \\
+ALG-0426 & 426 & Plant Self-Defense Mechanism Algorithm (PSDM) & 2018 & Caraveo et al. \\
+ALG-0427 & 427 & Emperor Penguin Optimizer (EPO) & 2018 & Dhiman and Kumar \\
+ALG-0428 & 428 & Lion Pride Optimization Algorithm (LPOA) & 2018 & A. Kaveh and S. Mahjoubi \\
+ALG-0429 & 429 & Multi-Scale Quantum Harmonic Oscillator Algorithm & 2018 & P. Wang et al. \\
+ALG-0430 & 430 & Mushroom Reproduction Optimization (MRO) & 2018 & M. Bidar et al. \\
+ALG-0431 & 431 & Tree Growth Algorithm (TGA) & 2018 & Cheraghalipour et al. \\
+ALG-0432 & 432 & Moth Search Algorithm (MSA) & 2018 & Wang \\
+ALG-0433 & 433 & Farmland Fertility (FF) & 2018 & H. Shayanfar et al. \\
+ALG-0434 & 434 & Pity Beetle Algorithm (PBA) & 2018 & Kallioras et al. \\
+ALG-0435 & 435 & Mouth Brooding Fish Algorithm (MBF) & 2018 & E. Jahani and M. Chizari \\
+ALG-0436 & 436 & Elephant Swarm Water Search Algorithm (ESWS) & 2018 & S. Mandal \\
+ALG-0437 & 437 & Sperm Swarm Optimization Algorithm (SSOA) & 2018 & Shehadeh et al. \\
+ALG-0438 & 438 & Team Game Algorithm (TGA) & 2018 & Mahmoodabadi et al. \\
+ALG-0439 & 439 & Coyote Optimization Algorithm (COA) & 2018 & Pierezan and Coelho \\
+ALG-0440 & 440 & Queuing Search Algorithm (QSA) & 2018 & Zhang et al. \\
+ALG-0441 & 441 & Supernova Optimizer (SO) & 2018 & Hudaib and Fakhouri \\
+ALG-0442 & 442 & Spiritual Search (SS) & 2018 & C. Egas \\
+ALG-0443 & 443 & School Based Optimization (SBO) & 2018 & M. Farshchin et al. \\
+ALG-0444 & 444 & Weighted Vertices Optimizer (WVO) & 2018 & S. Dolatabadi \\
+ALG-0445 & 445 & Volleyball Premier League Algorithm (VPLA) & 2018 & R. Moghdani et al. \\
+ALG-0446 & 446 & Yellow Saddle Goatfish Algorithm (YSGA) & 2018 & H. Azli, S Titri et al. \\
+ALG-0447 & 447 & Farmland Fertility Algorithm (FFA) & 2018 & Shayanfar et al. \\
+ALG-0448 & 448 & Fibonacci Indicator Algorithm (FIA) & 2018 & Etminaniesfahani et al. \\
+ALG-0449 & 449 & Meerkats Inspired Algorithm (MIA) & 2018 & Klein et al. \\
+ALG-0450 & 450 & Raccoon Optimization Algorithm (ROA) & 2018 & Koohi et al. \\
+ALG-0451 & 451 & Rhino Herd Behavior (RHB) & 2018 & Wang et al. \\
+ALG-0452 & 452 & Artificial Flora Optimization Algorithm (AF) & 2018 & Cheng et al. \\
+ALG-0453 & 453 & Chaotic Bean Optimization Algorithm (BOA) & 2018 & X. Zhang \\
+ALG-0454 & 454 & Multiple League Championship Algorithm (MLCA) & 2018 & M. A. Beheshtinia et al. \\
+ALG-0455 & 455 & Socio Evolution and Learning Optimization (SELO) & 2019 & W. Zhao et al. \\
+ALG-0456 & 456 & Future Search Algorithm (FSA) & 2019 & M. Elsisi \\
+ALG-0457 & 457 & Andean Condor Algorithm (ACA) & 2019 & Almonacid and Soto \\
+ALG-0458 & 458 & Anglerfish Algorithm (AA) & 2019 & M. F. Pook et al \\
+ALG-0459 & 459 & Artificial Ecosystem-Based Optimization (AEO) & 2019 & Zhao et al. \\
+ALG-0460 & 460 & Atom Search Optimization Algorithm (ASOA) & 2019 & S. Kamel, H. Hamour et al. \\
+ALG-0461 & 461 & Artificial Feeding Birds (AFB) & 2019 & J. B. Lamy and R. Tsopra \\
+ALG-0462 & 462 & Artificial Coronary Circulation System (ACCS) & 2019 & Kaveh and Kooshkebaghi \\
+ALG-0463 & 463 & Artificial Electric Field Algorithm (AEFA) & 2019 & Yadav et al. \\
+ALG-0464 & 464 & Bus Transportation Algorithm (BTA) & 2019 & M. Bodaghi et al. \\
+ALG-0465 & 465 & Biology Migration Algorithm (BMA) & 2019 & Zhang et al. \\
+ALG-0466 & 466 & Buzzard Optimization Algorithm (BUZOA) & 2019 & A. Arshaghi et al. \\
+ALG-0467 & 467 & Blue Monkey Algorithm (BM) & 2019 & Mahmood and Al-Khateeb \\
+ALG-0468 & 468 & Chaotic Dragonfly Algorithm (CDA) & 2019 & Sayed et al. \\
+ALG-0469 & 469 & Cultural Coyote Optimization Algorithm (CCOA) & 2019 & Pierezan et al. \\
+ALG-0470 & 470 & Dice Game Optimizer (DGO) & 2019 & M. Dehghanı et al. \\
+ALG-0471 & 471 & Donkey Theorem Optimization (DTO) & 2019 & M. Dehghani et al \\
+ALG-0472 & 472 & Falcon Optimization Algorithm (FOA) & 2019 & Vasconcelos Segundo et al \\
+ALG-0473 & 473 & Find-Fix-Finish-Exploit-Analyze Algorithm (F3EA) & 2019 & Kashan et al. \\
+ALG-0474 & 474 & Chaotic Optimal Foraging Algorithm (COFA) & 2019 & G. I. Sayed et al. \\
+ALG-0475 & 475 & Naked Moled Rat (NMR) & 2019 & Salgotra and Singh \\
+ALG-0476 & 476 & Xerus Optimization Algorithm (XOA) & 2019 & S. Yousefi et al. \\
+ALG-0477 & 477 & Nuclear Reaction Optimization (NRO) & 2019 & Z. Wei, C. Huang et al. \\
+ALG-0478 & 478 & The Algorithm of the Innovative Gunner (AIG) & 2019 & Pijarski and Kacejko \\
+ALG-0479 & 479 & Supply-Demand-Based Optimization (SDBO) & 2019 & W. Zhao, L. Wang et al. \\
+ALG-0480 & 480 & Butterfly Optimization Algorithm (BOA) & 2019 & Arora and Singh \\
+ALG-0481 & 481 & Electron Radar Search Algorithm (ERSA) & 2019 & S. Rahmanzadeh et al. \\
+ALG-0482 & 482 & Henry Gas Solubility Optimization (HGSO) & 2019 & Hashim et al. \\
+ALG-0483 & 483 & Hammerhead Shark Optimization Algorithm (HOA) & 2019 & A. Ali, K. Zafar, T. Bakhshi \\
+ALG-0484 & 484 & Fitness Dependent Optimizer (FDO) & 2019 & Abdullah and Ahmed \\
+ALG-0485 & 485 & Parasitism–Predation Algorithm (PPA) & 2019 & A. A. A. Mohamed et al. \\
+ALG-0486 & 486 & Pathfinder Algorithm (PA) & 2019 & H. Yapici and N. Cetinkaya \\
+ALG-0487 & 487 & Poor And Rich Optimization Algorithm (PROA) & 2019 & Moosavi and Bardsiri \\
+ALG-0488 & 488 & Seagull Optimization Algorithm (SOA) & 2019 & G. Dhiman and V. Kumar \\
+ALG-0489 & 489 & Sooty Tern Optimization Algorithm (STOA) & 2019 & G. Dhiman and A. Kaur \\
+ALG-0490 & 490 & Harris Hawks Optimization (HHO) & 2019 & A. Heidari, S. Mirjalili et al. \\
+ALG-0491 & 491 & Squirrel Search Algorithm (SSA) & 2019 & Jain et al. \\
+ALG-0492 & 492 & Flying Squirrel Optimizer (FSO) & 2019 & G. Azizyan et al. \\
+ALG-0493 & 493 & HeartPy & 2019 & P. Van Gent et al. \\
+ALG-0494 & 494 & Search And Rescue Optimization Algorithm (SAR) & 2019 & A. Shabani et al. \\
+ALG-0495 & 495 & Wild Mice Colony Algorithm (WMC) & 2019 & S. Nejatian et al. \\
+ALG-0496 & 496 & Thieves And Police Algorithm (TPA) & 2019 & H. Bagheri et al. \\
+ALG-0497 & 497 & Binary Whale Optimization Algorithm (bWOA) & 2019 & Reddy K et al. \\
+ALG-0498 & 498 & Bonobo Optimizer (BO) & 2019 & Das and Pratihar \\
+ALG-0499 & 499 & Buzzards Optimization Algorithm (BOA) & 2019 & Arshaghi et al. \\
+ALG-0500 & 500 & Deer Hunting Optimization Algorithm (DHOA) & 2019 & Brammya et al. \\
+ALG-0501 & 501 & Emperor Penguins Colony (EPC) & 2019 & Harifi et al. \\
+ALG-0502 & 502 & Flow Regime Algorithm (FRA) & 2019 & Tahani and Babayan \\
+ALG-0503 & 503 & Harris Hawks Optimizer (HHO) & 2019 & Heidari et al. \\
+ALG-0504 & 504 & Ludo Game-Based Swarm Intelligence Algorithm & 2019 & Singh et al. \\
+ALG-0505 & 505 & Optimal Foraging Algorithm (OFA) & 2019 & Sayed et al. \\
+ALG-0506 & 506 & Rain Water Algorithm (RWA) & 2019 & Biyanto et al. \\
+ALG-0507 & 507 & SailFish Optimizer (SFO) & 2019 & Shadravan et al. \\
+ALG-0508 & 508 & Sunflower Optimization (SFO) & 2019 & Gomes et al. \\
+ALG-0509 & 509 & The Mainz profile algorithm (MAPA) & 2019 & S. Beirle, S. Dörner et al. \\
+ALG-0510 & 510 & Modified Coyote Optimization Algorithm (MCOA) & 2019 & Z. Li, Y. Cao et al. \\
+ALG-0511 & 511 & Bees metaheuristic algorithm (BMA) & 2019 & S. Ebrahimpoor et al. \\
+ALG-0512 & 512 & Competition Over Resources (COR) & 2019 & R. M. Kagami et al. \\
+ALG-0513 & 513 & Life Choice-Based Optimizer (LCBO) & 2020 & A. Khatri, A. Gaba et al. \\
+ALG-0514 & 514 & SDA Optimization Algorithm (SDA) & 2020 & S. Sankar S and V. Chandra \\
+ALG-0515 & 515 & Heap-Based Optimizer (HBO) & 2020 & Q. Askari, M. Saeed et al. \\
+ALG-0516 & 516 & Mayfly Optimization Algorithm (MOA) & 2020 & K. Zervoudakis et al. \\
+ALG-0517 & 517 & Artificial Transgender Longicorn Algorithm (ATLA) & 2020 & X. Han, X. Du, P. Yu \\
+ALG-0518 & 518 & Barnacles Mating Optimizer (BMO) & 2020 & M. H. Sulaiman et al. \\
+ALG-0519 & 519 & Black Hole Mechanics Optimization (BHMO) & 2020 & Kaveh et al. \\
+ALG-0520 & 520 & Billiards-Inspired Optimization Algorithm (BIOA) & 2020 & A. Kaveh et al. \\
+ALG-0521 & 521 & Border Collie Optimization (BCO) & 2020 & T. Dutta et al. \\
+ALG-0522 & 522 & Buyer Inspired Meta-Heuristic Optimization Algorithm & 2020 & S. Debnath, W. Arif et al. \\
+ALG-0523 & 523 & Darts Game Optimizer (DGO) & 2020 & M. Dehghani et al. \\
+ALG-0524 & 524 & Dynamic Differential Annealed Optimization (DDAO) & 2020 & Ghafil and Jármai \\
+ALG-0525 & 525 & Dynastic Optimization Algorithm (DOA) & 2020 & Wagan et al. \\
+ALG-0526 & 526 & Forensic Based Investigation (FBI) & 2020 & Chou and Nguyen \\
+ALG-0527 & 527 & Plasma Generation Optimization (PGO) & 2020 & Kaveh et al. \\
+ALG-0528 & 528 & Newton Metaheuristic Algorithm (NMA) & 2020 & Gholizadeh et al. \\
+ALG-0529 & 529 & Equilibrium Optimizer (EO) & 2020 & A. Faramarzi et al. \\
+ALG-0530 & 530 & Electric Fish Optimization (EFO) & 2020 & S. Yilmaz and S. Sen \\
+ALG-0531 & 531 & Slime Mould Algorithm (SMA) & 2020 & S. Li, H. Chen et al. \\
+ALG-0532 & 532 & Black Widow Optimization Algorithm (BWOA) & 2020 & V. Hayyolalam et al. \\
+ALG-0533 & 533 & Manta Ray Foraging Optimization (MRFO) & 2020 & W. Zhao, Z. Zhang, L Wang \\
+ALG-0534 & 534 & Mayfly Algorithm (MA) & 2020 & T. Bhattacharyya et al. \\
+ALG-0535 & 535 & Orcas Algorithm (OA) & 2020 & H. Drias, Y. Drias et al \\
+ALG-0536 & 536 & Political Optimizer (PO) & 2020 & Q. Askari et al. \\
+ALG-0537 & 537 & Group Teaching Optimization Algorithm (GTOA) & 2020 & Y. Zhang and Z. Jin \\
+ALG-0538 & 538 & Turbulent Flow Of Water-Based Optimization (TFWO) & 2020 & M. Ghasemi et al. \\
+ALG-0539 & 539 & Human Urbanization Algorithm (HUA) & 2020 & H. Ghasemian et al. \\
+ALG-0540 & 540 & Chimp Optimization Algorithm (ChOA) & 2020 & M. Khishe and M. Mosavi \\
+ALG-0541 & 541 & Coronavirus Optimization Algorithm (COA) & 2020 & F. Martínez-Álvarez et al. \\
+ALG-0542 & 542 & COVID-19 Optimizer Algorithm (CVA) & 2020 & E. Hosseini et al. \\
+ALG-0543 & 543 & Multivariable Grey Prediction Evolution Algorithm & 2020 & X. Xu, Z. Hu, Q. Su et al. \\
+ALG-0544 & 544 & Sandpiper Optimization Algorithm (SOA) & 2020 & A. Kaur, S. Jain, S. Goel \\
+ALG-0545 & 545 & Shuffled Shepherd Optimization (SSO) & 2020 & A. Kaveh and A. Zaerreza \\
+ALG-0546 & 546 & Golden Ratio Optimization Method (GTOM) & 2020 & A. F. Nematollahi et al. \\
+ALG-0547 & 547 & Gaining-Sharing Knowledge Based Algorithm (GSKA) & 2020 & A. W. Mohamed et al. \\
+ALG-0548 & 548 & Adolescent Identity Search Algorithm (AISA) & 2020 & E. Bogar and S. Beyhan \\
+ALG-0549 & 549 & Grand Tour Algorithm (GTA) & 2020 & G. Meirelles et al. \\
+ALG-0550 & 550 & Momentum Search Algorithm (MSA) & 2020 & M. Dehghani and H. Samet \\
+ALG-0551 & 551 & Nomadic People Optimizer (NPO) & 2020 & S. Q. Salih and A. Alsewari \\
+ALG-0552 & 552 & New Caledonian Crow Learning Algorithm (NCCL) & 2020 & Al-Sorori and Mohsen \\
+ALG-0553 & 553 & Horse Optimization Algorithm (HOA) & 2020 & D. Moldovan \\
+ALG-0554 & 554 & Rao Algorithms (RA) & 2020 & R. V. Rao \\
+ALG-0555 & 555 & Rain Optimization Algorithm (ROA) & 2020 & A. R. Moazzeni et al \\
+ALG-0556 & 556 & Student Psychology Based Optimization Algorithm & 2020 & B. Das, V. Mukherjee et al. \\
+ALG-0557 & 557 & Shell Game Optimization (SGO) & 2020 & M. Dehghani et al. \\
+ALG-0558 & 558 & Sparrow Search Algorithm (SSA) & 2020 & J. Xue and B. Shen \\
+ALG-0559 & 559 & Tiki-Taka Algorithm (TTA) & 2020 & M. F. F. Ab. Rashid \\
+ALG-0560 & 560 & Transient Search Optimization (TSO) & 2020 & Qais et al. \\
+ALG-0561 & 561 & Vapor-Liquid Equilibrium Algorithm (VLEA) & 2020 & C. Taramasco et al. \\
+ALG-0562 & 562 & Wingsuit Flying Search (WFS) & 2020 & N. Covic and B. Lacevic \\
+ALG-0563 & 563 & Water Strider Algorithm (WSA) & 2020 & A. Kaveh et al. \\
+ALG-0564 & 564 & Woodpecker Mating Algorithm (WMA) & 2020 & Karimzadeh Parizi et al. \\
+ALG-0565 & 565 & Solar System Algorithm (SSA) & 2020 & F. Zitouni, S. Harous et al. \\
+ALG-0566 & 566 & Teng-Yue Algorithm (TYA) & 2020 & T. Li, S. Fong et al. \\
+ALG-0567 & 567 & Projectiles Optimization (PO) & 2020 & Kahrizi and Kabudian \\
+ALG-0568 & 568 & Color Harmony Algorithm (CHA) & 2020 & Zaeimi and Ghoddosian \\
+ALG-0569 & 569 & Multi-Objective Beetle Antennae Search (MOBAS) & 2020 & J. Zhang, Y. Huang et al \\
+ALG-0570 & 570 & Orca Optimization Algorithm (OOA) & 2020 & Golilarz et al. \\
+ALG-0571 & 571 & Photon Search Algorithm (PSA) & 2020 & Liu and Li \\
+ALG-0572 & 572 & Triple Distinct Search Dynamics (TDSD) & 2020 & Li et al. \\
+ALG-0573 & 573 & Gradient-Based Optimizer (GBO) & 2020 & I. Ahmadianfar et al. \\
+ALG-0574 & 574 & Giza Pyramids Construction Algorithm (GPC) & 2020 & Harifi et al. \\
+ALG-0575 & 575 & Interactive Autodidactic School Algorithm (IAS) & 2020 & M. Jahangiri et al \\
+ALG-0576 & 576 & Kernel Search Optimization (KSO) & 2020 & Dong and Wang \\
+ALG-0577 & 577 & Lévy Flight Distribution (LFD) & 2020 & Houssein et al. \\
+ALG-0578 & 578 & Marine Predator Algorithm (MPA) & 2020 & Faramarzi et al. \\
+ALG-0579 & 579 & Multivariable Grey Prediction Model Algorithm & 2020 & Xu et al. \\
+ALG-0580 & 580 & Spherical Search Algorithm (SSA) & 2020 & Misra et al. \\
+ALG-0581 & 581 & Spherical Search Optimizer (SSO) & 2020 & Zhao et al. \\
+ALG-0582 & 582 & Tunicate Swarm Algorithm (TSA) & 2020 & Kaur et al. \\
+ALG-0583 & 583 & Virus Spread Optimization (VSO) & 2020 & Li and Tam \\
+ALG-0584 & 584 & Bear Smell Search Algorithm (BSSA) & 2020 & Ghasemi-Marzbali \\
+ALG-0585 & 585 & Bald Eagle Search (BES) & 2020 & Alsattar et al. \\
+ALG-0586 & 586 & Hypercube Natural Aggregation Algorithm (HNAA) & 2020 & O. Maciel, A. Valdivia et al. \\
+ALG-0587 & 587 & Chaotic Enhanced Colliding Bodies Optimization & 2020 & J. Cheng and W. Zhao \\
+ALG-0588 & 588 & Phototropic Optimization Algorithm (POA) & 2021 & V. Chandra SS et al. \\
+ALG-0589 & 589 & Capuchin Search Algorithm (CSA) & 2021 & M. Braik, A. Sheta et al. \\
+ALG-0590 & 590 & Flamingo Search Algorithm & 2021 & W. Zhiheng et al. \\
+ALG-0591 & 591 & General Particle Swarm Optimization algorithm & 2021 & W. Chuanjun  et al. \\
+ALG-0592 & 592 & Northern Goshawk Optimization (NGO) & 2021 & M. Dehghani et al. \\
+ALG-0593 & 593 & Rat Swarm Optimizer (RSO) & 2021 & G. Dhiman et al. \\
+ALG-0594 & 594 & Chaos Game Optimization (CGO) & 2021 & Talatahari and Azizi \\
+ALG-0595 & 595 & Chameleon Swarm Algorithm (CSA) & 2021 & M. S. Braik \\
+ALG-0596 & 596 & Atomic Orbital Search (AOS) & 2021 & M. Azizi \\
+ALG-0597 & 597 & Artificial Jellyfish Search Optimizer (JS) & 2021 & Jui-Sheng Chou and Dinh-Nhat Truong \\
+ALG-0598 & 598 & Cooperation Search Algorithm (CSA) & 2021 & Z. Feng, W. Niu et al. \\
+ALG-0599 & 599 & Archimedes Optimization Algorithm (AOA) & 2021 & Hashim et al. \\
+ALG-0600 & 600 & Archerfish Hunting Optimizer (AHO) & 2021 & Zitouni et al. \\
+ALG-0601 & 601 & Battle Royale Optimization Algorithm (BRO) & 2021 & Rahkar Farshi \\
+ALG-0602 & 602 & Artificial Lizard Search Optimization (ALSO) & 2021 & Kumar et al. \\
+ALG-0603 & 603 & Quantum Firefly Algorithm (QFA) & 2021 & F. Zitouni et al. \\
+ALG-0604 & 604 & Lichtenberg Algorithm (LA) & 2021 & J. L. J. Pereira et al. \\
+ALG-0605 & 605 & Pastoralist Optimization Algorithm (POA) & 2021 & S. A. Shehu et al. \\
+ALG-0606 & 606 & Elephant Clan Optimization (ECO) & 2021 & Jafari et al. \\
+ALG-0607 & 607 & Red Colobuses Monkey (RCM) & 2021 & W. J. AL-kubaisy et al \\
+ALG-0608 & 608 & Golden Eagle Optimizer (GEO) & 2021 & Mohammadi-Balani et al. \\
+ALG-0609 & 609 & Dingo Optimizer (DO) & 2021 & A. K. Bairwa et al. \\
+ALG-0610 & 610 & Coronavirus Herd Immunity Optimizer (CHIO) & 2021 & Al-Betar et al. \\
+ALG-0611 & 611 & Red Fox Optimization Algorithm (RFO) & 2021 & D. Połap and M. Woźniak \\
+ALG-0612 & 612 & Arithmetic Optimization Algorithm (AOA) & 2021 & Abualigah et al. \\
+ALG-0613 & 613 & African Vultures Optimization Algorithm (AVOA) & 2021 & Abdollahzadeh et al. \\
+ALG-0614 & 614 & Artificial Gorilla Troops Optimizer (GTO) & 2021 & Abdollahzadeh et al. \\
+ALG-0615 & 615 & Komodo Mlipir Algorithm (KMA) & 2021 & Suyanto et al. \\
+ALG-0616 & 616 & Optimal Stochastic Process Optimizer (OSPO) & 2021 & J. Xu and L. Xu \\
+ALG-0617 & 617 & Reptile Search Algorithm (RSA) & 2021 & Abualigah et al. \\
+ALG-0618 & 618 & Ring Toss Game-Based Optimization Algorithm & 2021 & Doumari et al. \\
+ALG-0619 & 619 & RUNge Kutta Optimizer (RUN) & 2021 & Ahmadianfar et al. \\
+ALG-0620 & 620 & Samw - Subantarctic Mode Water & 2021 & Tychalas and Karatza \\
+ALG-0621 & 621 & String Theory Algorithm (STA) & 2021 & Rodriguez et al. \\
+ALG-0622 & 622 & Tangent Search Algorithm (TSA) & 2021 & Layeb \\
+ALG-0623 & 623 & Tuna Swarm Optimization (TSO) & 2021 & Xie et al. \\
+ALG-0624 & 624 & Volcano Eruption Algorithm (VCA) & 2021 & Hosseini et al. \\
+ALG-0625 & 625 & Smart Flower Optimization Algorithm (SFOA) & 2021 & Sattar and Salim \\
+ALG-0626 & 626 & Crystal Structure Algorithm (CryStAl) & 2021 & Talatahari et al. \\
+ALG-0627 & 627 & Ebola Optimization Search Algorithm (EOSA) & 2021 & Oyelade and Ezugwu \\
+ALG-0628 & 628 & Flow Direction Algorithm (FDA) & 2021 & Karami et al. \\
+ALG-0629 & 629 & Group Mean-Based Optimizer (GMBO) & 2021 & Dehghani et al. \\
+ALG-0630 & 630 & Heat Transfer Optimization Aalgorithm (HTOA) & 2021 & Asef et al. \\
+ALG-0631 & 631 & Intelligent Ice Fishing Algorithm (IIFA) & 2021 & Karpenko and Kuzmina \\
+ALG-0632 & 632 & Linear Prediction Evolution Algorithm (LPE) & 2021 & Gao et al. \\
+ALG-0633 & 633 & Material Generation Algorithm (MGA) & 2021 & Talatahari et al. \\
+ALG-0634 & 634 & Multi-Objective Trader algorithm (MOTR) & 2021 & M-Sobhanzadeh et al. \\
+ALG-0635 & 635 & Orca Predation Algorithm (OPA) & 2021 & Jiang et al. \\
+ALG-0636 & 636 & Remora Optimization Algorithm (ROA) & 2021 & Jia et al. \\
+ALG-0637 & 637 & SaMW & 2021 & Tychalas and Karatza \\
+ALG-0638 & 638 & Success History Intelligent Optimizer (SHIO) & 2021 & Fakhouri et al. \\
+ALG-0639 & 639 & Evolutionary multi-objective Seagull Optimization & 2021 & G. Dhiman et al. \\
+ALG-0640 & 640 & FIFA world cup optimization (WCO) & 2022 & M. B. N. B. Mahaleh \\
+ALG-0641 & 641 & Seasons Optimization Algorithm (SOA) & 2022 & H. Emam \\
+ALG-0642 & 642 & Skill Optimization Algorithm (SOA) & 2022 & Hadi Givi \\
+ALG-0643 & 643 & Alpine skiing optimization (ASO) & 2022 & Y Yuan, J Ren, et al. \\
+ALG-0644 & 644 & Body-Fitted Bi-Directional Evolutionary Structural Optimization (BBESO) & 2022 & Z Zhuang, YM Xie et al. \\
+ALG-0645 & 645 & CAPSO: Chaos Adaptive Particle Swarm Optimization & 2022 & Y Duan, N Chen et al. \\
+ALG-0646 & 646 & Egret Swarm Optimization Algorithm (ESOA) & 2022 & Z. Chen, A. Francis  et al. \\
+ALG-0647 & 647 & Gannet Optimization Algorithm (GOA) & 2022 & J. S. Pan, L. G. Zhang et al. \\
+ALG-0648 & 648 & Giant Trevally Optimizer (GTO) & 2022 & H. T. Sadeeq et al. \\
+ALG-0649 & 649 & Honey Badger Algorithm (HBA) & 2022 & F. A. Hashim  et al. \\
+ALG-0650 & 650 & Light Spectrum Optimizer (LSO) & 2022 & M Abdel-Basset et al. \\
+ALG-0651 & 651 & Tasmanian Devil Optimization (TDO) & 2022 & M. Dehghani et al. \\
+ALG-0652 & 652 & Walrus Optimization Algorithm (WOA) & 2022 & P. Trojovský, M. Dehghani \\
+ALG-0653 & 653 & The Cheetah Optimizer (COA) & 2022 & M.A. Akbari, M. Zare  et al. \\
+ALG-0654 & 654 & Zebra Optimization Algorithm (ZOA) & 2022 & E. Trojovská et al. \\
+ALG-0655 & 655 & Aphid-Ant Mutualism (AAM) & 2022 & Eslami et al. \\
+ALG-0656 & 656 & Aphids Optimization Algorithm (AOA) & 2022 & Liu et al. \\
+ALG-0657 & 657 & Archery Algorithm (AA) & 2022 & Zeidabadi et al. \\
+ALG-0658 & 658 & Beluga Whale Optimization (BWO) & 2022 & Zhong et al. \\
+ALG-0659 & 659 & Chef-Based Optimization Algorithm (CBOA) & 2022 & Trojovská and Dehghani \\
+ALG-0660 & 660 & Child Drawing Development Optimization (CDDO) & 2022 & Abdulhameed and Rashid \\
+ALG-0661 & 661 & Circle Search Algorithm (CSA) & 2022 & Qais et al. \\
+ALG-0662 & 662 & Circulatory System-based Optimization (CSBO) & 2022 & Ghasemi et al. \\
+ALG-0663 & 663 & City Councils Evolution (CCE) & 2022 & Pira \\
+ALG-0664 & 664 & Coronavirus Optimization Algorithm (COVIDOA) & 2022 & Khalid et al. \\
+ALG-0665 & 665 & Corona Virus Optimization (CVO) & 2022 & Salehan and Deldari \\
+ALG-0666 & 666 & Dandelion Optimizer (DO) & 2022 & Zhao et al. \\
+ALG-0667 & 667 & Driving Training-Based Optimization (DTBO) & 2022 & Dehghani et al. \\
+ALG-0668 & 668 & Election-Based Optimization Algorithm (EBOA) & 2022 & Trojovskỳ and Dehghani \\
+ALG-0669 & 669 & Escaping Bird Search (EBS) & 2022 & Shahrouzi and Kaveh \\
+ALG-0670 & 670 & Eurasian Oystercatcher Optimiser (EOO) & 2022 & Salim et al. \\
+ALG-0671 & 671 & Fertilization Optimization Algorithm (FOA) & 2022 & Ghafil et al. \\
+ALG-0672 & 672 & Fireworks Optimization Algorithm (FOA) & 2022 & Ehsaeyan and Zolghadrasli \\
+ALG-0673 & 673 & Fox Optimizer (FOX) & 2022 & Mohammed and Rashid \\
+ALG-0674 & 674 & Geometric Octal Zones Distance Estimation Algorithm & 2022 & Kuyu and Vatansever \\
+ALG-0675 & 675 & Golden Jackal Optimization (GJO) & 2022 & Chopra and Ansari \\
+ALG-0676 & 676 & Golden Search Optimization Algorithm (GSO) & 2022 & Noroozi et al. \\
+ALG-0677 & 677 & Human Felicity Algorithm (HFA) & 2022 & Veysari et al. \\
+ALG-0678 & 678 & Mean Euclidian Distance Threshold (MEDT) & 2022 & Kaveh et al. \\
+ALG-0679 & 679 & Namib Beetle Optimization (NBO) & 2022 & Chahardoli et al. \\
+ALG-0680 & 680 & Pelican Optimization Algorithm (POA) & 2022 & Trojovskỳ and Dehghani \\
+ALG-0681 & 681 & Plant Competition Optimization (PCO) & 2022 & Rahmani and AliAbdi \\
+ALG-0682 & 682 & Poplar Optimization Algorithm (POA) & 2022 & Chen et al. \\
+ALG-0683 & 683 & Prairie Dog Optimization (PDO) & 2022 & Ezugwu et al. \\
+ALG-0684 & 684 & Search in Forest Optimizer (SFO) & 2022 & Ahwazian et al. \\
+ALG-0685 & 685 & Sheep Flock Optimization Algorithm (SFOA) & 2022 & Kivi and Majidnezhad \\
+ALG-0686 & 686 & Skip Salp Swam Algorithm (SSSA) & 2022 & Arunekumar and Joseph \\
+ALG-0687 & 687 & Snake Optimizer (SO) & 2022 & Hashim and Hussien \\
+ALG-0688 & 688 & Special Relativity Search (SRS) & 2022 & Goodarzimehr et al. \\
+ALG-0689 & 689 & Spy Algorithm (SA) & 2022 & Pambudi and Kawamura \\
+ALG-0690 & 690 & Starling Murmuration Optimizer (SMO) & 2022 & Zamani et al. \\
+ALG-0691 & 691 & Termite Life Cycle Optimizer (TLCO) & 2022 & Minh et al. \\
+ALG-0692 & 692 & Trees Social Relations Optimization Algorithm (TSR) & 2022 & Alimoradi et al. \\
+ALG-0693 & 693 & War Strategy Optimization (WSO) & 2022 & Ayyarao et al. \\
+ALG-0694 & 694 & Water Optimization Algorithm (WAO) & 2022 & Daliri et al. \\
+ALG-0695 & 695 & White Shark Optimizer (WSO) & 2022 & Braik et al. \\
+ALG-0696 & 696 & Artificial Hummingbird Algorithm (AHA) & 2022 & Zhao et al. \\
+ALG-0697 & 697 & Ali Baba and the Forty Thieves Optimization (AFT) & 2022 & Braik et al. \\
+ALG-0698 & 698 & Stochastic Paint Optimizer (SPO) & 2022 & A. Kaveh et al. \\
+ALG-0699 & 699 & Mountain Gazelle Optimizer (MGO) & 2022 & B. Abdollahzadeh, F. Soleimanian Gharehchopogh, N. Khodadadi, and S. Mirjalili \\
+ALG-0700 & 700 & Language Education Optimization (LEO) & 2023 & P. Trojovský, M. Dehghani. \\
+ALG-0701 & 701 & Spider Wasp Optimizer (SWO) & 2023 & M. Abdel-Basset et al \\
+ALG-0702 & 702 & Subtraction-Average-Based Optimizer (SABO) & 2023 & P. Trojovský, M. Dehghani. \\
+ALG-0703 & 703 & Kookaburra Optimization Algorithm (KOA) & 2023 & Mohammad Dehghani et al. \\
+ALG-0704 & 704 & Al-Biruni Earth Radius (BER) metaheuristic search optimization algorithm & 2023 & El-Kenawy, E. S. M. et al. \\
+ALG-0705 & 705 & Lyrebird optimization algorithm (LOA) & 2023 & Mohammad Dehghani et\textbackslash\{\},al. \\
+ALG-0706 & 706 & Gazelle optimization algorithm (GOA) & 2023 & Jeffrey O. Agushaka \\
+ALG-0707 & 707 & Osprey optimization algorithm (OOA) & 2023 & Mohammad Dehghani \\
+ALG-0708 & 708 & Mother optimization algorithm (MOA) & 2023 & Ivana Matoušová et\textbackslash\{\},al. \\
+ALG-0709 & 709 & Green Anaconda Optimization (GAO) & 2023 & Mohammad Dehghani et al. \\
+ALG-0710 & 710 & Sand Cat Swarm Optimization (SCSO) & 2023 & Seyyedabbasi, A. et al. \\
+ALG-0711 & 711 & Bi-directional evolutionary structural optimization & 2023 & T. Xu et\textbackslash\{\},al. \\
+ALG-0712 & 712 & Waterwheel Plant Algorithm (WWPA) & 2023 & A. A. Abdelhamid et al. \\
+ALG-0713 & 713 & Mendelian evolutionary theory optimization (METO) & 2023 & Neeraj Gupta et al. \\
+ALG-0714 & 714 & Red Panda Optimization Algorithm (RPO) & 2023 & Hadi Givi et al. \\
+ALG-0715 & 715 & Sea-horse Optimizer (SHO) & 2023 & F. A. Özbay et al. \\
+ALG-0716 & 716 & Coati Optimization Algorithm (COA) & 2023 & Mohammad Dehghani et al. \\
+ALG-0717 & 717 & Giant Armadillo Optimization (GAO) & 2023 & Omar Alsayyed et al. \\
+ALG-0718 & 718 & Termite Alate Optimization Algorithm (TAOA) & 2023 & A. Majumder et al. \\
+ALG-0719 & 719 & Fire Hawk Optimizer (FHO) & 2023 & M. Azizi et al. \\
+ALG-0720 & 720 & Humboldt Squid Optimization Algorithm (HSOA) & 2023 & M. V. Anaraki et al. \\
+ALG-0721 & 721 & Pair Barracuda Swarm Optimization (PBSO) & 2023 & J. Guo, G. Zhou et al. \\
+ALG-0722 & 722 & Growth Optimizer (GO) & 2023 & Q. Zhang, H. Gao et al. \\
+ALG-0723 & 723 & Coronavirus Mask Protection Algorithm (CMPA) & 2023 & Y. Yuan, Q. Shen et al. \\
+ALG-0724 & 724 & Binary Sand Cat Swarm Optimization (bSCSO) & 2023 & A. Seyyedabbasi et al. \\
+ALG-0725 & 725 & Artificial Locust Swarm Optimization Algorithm & 2023 & O. Kesemen, E. Özkül et al. \\
+ALG-0726 & 726 & Evolutionary Mating Algorithm & 2023 & MH Sulaiman et al. \\
+ALG-0727 & 727 & Genghis Khan Shark Optimizer & 2023 & G Hu, Y Guo et al. \\
+ALG-0728 & 728 & Mantis Search Algorithm & 2023 & M Abdel-Basset et al. \\
+ALG-0729 & 729 & Billiards Optimization Algorithm & 2023 & H Givi, M Hubalovska \\
+ALG-0730 & 730 & Group Learning Algorithm & 2023 & C. M. Rahman \\
+ALG-0731 & 731 & Squid Game Optimizer (SGO) & 2023 & M. Azizi et al. \\
+ALG-0732 & 732 & Liver Cancer Algorithm & 2023 & E. H. Houssein, D. Oliva \\
+ALG-0733 & 733 & Nutcracker Optimizer & 2023 & M. Abdel-Basset et al. \\
+ALG-0734 & 734 & Energy Valley Optimizer (EVO) & 2023 & M. Azizi, U. Aickelin et al. \\
+ALG-0735 & 735 & Special Forces Algorithm (SFA) & 2023 & W. Zhang, K. Pan et al. \\
+ALG-0736 & 736 & Snow Ablation Optimizer (SAO) & 2023 & L. Deng and S. Liu \\
+ALG-0737 & 737 & Great Wall Construction Algorithm (GWCA) & 2023 & Z. Guan, C. Ren et al. \\
+ALG-0738 & 738 & Rhizostoma optimization algorithm & 2023 & E. A. Mahareek et al. \\
+ALG-0739 & 739 & One-to-One-Based Optimizer (OOBO) & 2023 & M. Dehghani et al. \\
+ALG-0740 & 740 & Gold rush optimizer & 2023 & K. Zolfi \\
+ALG-0741 & 741 & Kepler optimization algorithm & 2023 & M. Abdel-Basset et al. \\
+ALG-0742 & 742 & Electrical Search Algorithm (ESA) & 2023 & H. Demirci et al. \\
+ALG-0743 & 743 & Mountaineering Team-based Optimization & 2023 & I. Faridmehr et al. \\
+ALG-0744 & 744 & Shrimp and Goby Association Search Algorithm & 2023 & T. Sang-To et al. \\
+ALG-0745 & 745 & Numeric crunch algorithm & 2023 & S. et al. Thapliyal et al. \\
+ALG-0746 & 746 & Dujiangyan Irrigation System Optimization (DISO) & 2023 & J. T. Niu et al. \\
+ALG-0747 & 747 & Artificial rat optimization with decision-making & 2023 & T. Mzili et al. \\
+ALG-0748 & 748 & Modern Metaheuristic Algorithm (MoMA) & 2023 & S. Suwannarongsri \\
+ALG-0749 & 749 & Dark Forest Algorithm (DFA) & 2023 & D. Li, S. Du et al. \\
+ALG-0750 & 750 & Grid Connected Photovoltaic (GCPV) & 2023 & B. Mohapatra et al. \\
+ALG-0751 & 751 & Martial Art Learning Optimization & 2023 & J. S. Pan, L. Li et al. \\
+ALG-0752 & 752 & Cubature Kalman optimizer (CKO) & 2023 & Z. Musa et al. \\
+ALG-0753 & 753 & Binary Volleyball Premier League Algorithm (BVPL) & 2023 & E. Naka \\
+ALG-0754 & 754 & Migration Algorithm (MA) & 2023 & P Trojovský et al. \\
+ALG-0755 & 755 & Human-Whale Cooperation Optimization (HWO) & 2023 & F. Parandeh Motlagh et al. \\
+ALG-0756 & 756 & Drawer algorithm & 2023 & E. Trojovská et al. \\
+ALG-0757 & 757 & Fuzzy Hunter Optimizer & 2023 & M. E. H. Rodríguez \\
+ALG-0758 & 758 & Barnacle Growth Algorithm (BGA) & 2023 & A. Shao, S. C. Chu et al. \\
+ALG-0759 & 759 & Resistance–Capacitance Optimization Algorithm & 2023 & M. Premkumar et al. \\
+ALG-0760 & 760 & Random update particle swarm optimizer (RUPSO) & 2023 & H. Dadashi et al. \\
+ALG-0761 & 761 & Dwarf Mongoose Optimization (DMO) & 2023 & S. Fu, H. Huang et al. \\
+ALG-0762 & 762 & Dung Beetle Optimizer (DBO) & 2023 & J. Xue and B. Shen \\
+ALG-0763 & 763 & Medalist Learning Algorithm (MLA) & 2023 & S. X. He and Y. T. Cui \\
+ALG-0764 & 764 & Run-Catch Optimizer & 2023 & P. D. Kusuma et al. \\
+ALG-0765 & 765 & Horse Herd Optimization Algorithm (HOA) & 2023 & E. A. Zaimoğlu et al. \\
+ALG-0766 & 766 & FIFA World Cup Algorithm (FIFAWC) & 2024 & D Pei, D Huang, Y Wang \\
+ALG-0767 & 767 & Prism Refraction Search & 2024 & R Kundu et al. \\
+ALG-0768 & 768 & Sculptor Optimization Algorithm & 2024 & T. Hamadneh et al. \\
+ALG-0769 & 769 & Ninja Optimization Algorithm (NiOA) & 2024 & E. S. M. El-Kenawy et al. \\
+ALG-0770 & 770 & Apiary Organizational-Based Optimization Algorithm & 2024 & M. A. Al-Sharqi et al. \\
+ALG-0771 & 771 & Flood Algorithm & 2024 & R. Ozkan et al. \\
+ALG-0772 & 772 & Literature research optimizer & 2024 & L. Ni, Y. Ping et al. \\
+ALG-0773 & 773 & Frigatebird optimizer & 2024 & X. Wang \\
+ALG-0774 & 774 & Hyperbolic Sine Optimizer & 2024 & S. Thapliyal \\
+ALG-0775 & 775 & Frilled Lizard Optimization & 2024 & I. A. Falahah et al. \\
+ALG-0776 & 776 & Frog-Snake prey-predation Relationship Optimization & 2024 & H. Saitou et al. \\
+ALG-0777 & 777 & Walking Palm Tree algorithm (WPT) & 2024 & F. Zitouni et al. \\
+ALG-0778 & 778 & Golf Sport Inspired Search (GSIS) & 2024 & A. Husseinzadeh Kashan \\
+ALG-0779 & 779 & Treble Opposite Algorithm & 2024 & P. D. Kusuma et al. \\
+ALG-0780 & 780 & Gyro Fireworks Algorithm (GFA) & 2024 & X. Wang \\
+ALG-0781 & 781 & Bluefin Trevally Optimizer (BTO) & 2024 & D. Dutta \\
+ALG-0782 & 782 & Sales Training Based Optimization (STBO) & 2024 & T. Hamadneh et al. \\
+ALG-0783 & 783 & Generalized Evolutionary Metaheuristic  (GEM) & 2024 & X. S. Yang \\
+ALG-0784 & 784 & Arsh-Fati-Based Cluster Head Selection Algorithm & 2024 & Y. Aounzou et al. \\
+ALG-0785 & 785 & Newton-Raphson-Based Optimizer & 2024 & R. Sowmya et al. \\
+ALG-0786 & 786 & Greater cane rat algorithm (GCRA) & 2024 & Agushaka, J.O. et al. \\
+ALG-0787 & 787 & Hippopotamus optimization algorithm & 2024 & M. H. Amiri et al. \\
+ALG-0788 & 788 & Metaheuristic algorithms for optimization & 2024 & Tomar, V. et al. \\
+ALG-0789 & 789 & Pufferfish optimization algorithm & 2024 & Al-Baik, O. et al. \\
+ALG-0790 & 790 & Bobcat Optimization Algorithm (BOA) & 2024 & Benmamoun, Z. et\textbackslash\{\},al. \\
+ALG-0791 & 791 & Human evolutionary optimization algorithm (HEOA) & 2024 & Lian, J. \\
+ALG-0792 & 792 & Secretary bird optimization algorithm & 2024 & Fu, Y. et al. \\
+ALG-0793 & 793 & Fossa optimization algorithm (FOA) & 2024 & Hamadneh, T. \\
+ALG-0794 & 794 & Elk herd optimizer (EHO) & 2024 & Al-Betar, M.A. et al. \\
+ALG-0795 & 795 & Quantum particle swarm optimization algorithm & 2024 & Chen Gong et al. \\
+ALG-0796 & 796 & Arctic Puffin Optimization (APO) & 2024 & W. Wang et\textbackslash\{\},al. \\
+ALG-0797 & 797 & Improved Sandcat Swarm Optimization algorithm & 2024 & Y. Cai et\textbackslash\{\},al. \\
+ALG-0798 & 798 & Synergistic Swarm Optimization Algorithm (SSOA) & 2024 & S. Alzoubi et\textbackslash\{\},al. \\
+ALG-0799 & 799 & The Hiking Optimization Algorithm (HOA) & 2024 & S. O. Oladejo et\textbackslash\{\},al. \\
+ALG-0800 & 800 & Football Optimization Algorithm (FbOA) & 2024 & E-S. M. El-Kenawy et al. \\
+ALG-0801 & 801 & Botox Optimization Algorithm (BOA) & 2024 & M. Hubálovská \\
+ALG-0802 & 802 & Puma Optimizer (PO) & 2024 & B. Abdollahzadeh et\textbackslash\{\},al. \\
+ALG-0803 & 803 & Leaf in Wind Optimization (LiWO) & 2024 & Ning Fang \textbackslash\{\}\& Qi Cao \\
+ALG-0804 & 804 & Ship Rescue Optimization (SRO) & 2024 & S. C. Chu et\textbackslash\{\},al. \\
+ALG-0805 & 805 & Partial Reinforcement Optimizer (PRO) & 2024 & A. Taheri \\
+ALG-0806 & 806 & Artificial Protozoa Optimizer (APO) & 2024 & Xiaopeng Wang et\textbackslash\{\},al. \\
+ALG-0807 & 807 & Lévy Arithmetic Algorithm & 2024 & S. Barua \\
+ALG-0808 & 808 & Cleaner Fish Optimization (CFO) & 2024 & Wenya Zhang et al. \\
+ALG-0809 & 809 & Nizar Optimization Algorithm (NOA) & 2024 & S. E. Khouni, T. Menacer. \\
+ALG-0810 & 810 & Carpet Weaver Optimization & 2024 & S. Alomari et\textbackslash\{\},al. \\
+ALG-0811 & 811 & Lotus Effect Optimization Algorithm (LEA) & 2024 & E. Dalirinia, et al. \\
+ALG-0812 & 812 & Greylag Goose Optimization (GGO) & 2024 & Wei Zhang et al. \\
+ALG-0813 & 813 & Duck Swarm Algorithm (DSA) & 2024 & Mengjian Zhang et al. \\
+ALG-0814 & 814 & Walrus Optimizer (WO) & 2024 & Muxuan Han et al. \\
+ALG-0815 & 815 & Electric eel foraging optimization & 2024 & W. Zhao et al. \\
+ALG-0816 & 816 & Black Eagle Optimizer (BEO) & 2024 & Haobin Zhang et al. \\
+ALG-0817 & 817 & Artificial meerkat algorithm (AMA) & 2024 & Xiaowei Wang \\
+ALG-0818 & 818 & Route Optimization & 2024 & M. Khahfi et al. \\
+ALG-0819 & 819 & Pied Kingfisher Optimizer (PKO) & 2024 & A. Bouaouda et al. \\
+ALG-0820 & 820 & Tactical Unit Algorithm (TUA) & 2024 & Z. Li et al. \\
+ALG-0821 & 821 & Love Evolution Algorithm (LEA) & 2024 & Yuansheng Gao \\
+ALG-0822 & 822 & Genetic Engineering Algorithm (GEA) & 2024 & M. Sohrabi et al. \\
+ALG-0823 & 823 & iHow Optimization Algorithm (iHowOA) & 2024 & E-S. M. El-Kenawy et al. \\
+ALG-0824 & 824 & Eurasian Lynx Optimizer (ELO) & 2024 & Xiaowei Wang \\
+ALG-0825 & 825 & Cultural history optimization algorithm & 2025 & T. Sharifi et al. \\
+ALG-0826 & 826 & Bird of Prey-Based Optimization (BPBO) & 2025 & M. Ghasemi et al. \\
+ALG-0827 & 827 & Builder Optimization Algorithm (BUOA) & 2025 & T. Hamadneh et al. \\
+ALG-0828 & 828 & Candle Flame Optimization (CFO) & 2025 & T. Hamadneh et al. \\
+ALG-0829 & 829 & Chaotic Evolution Optimization (CEO) & 2025 & Y. Dong, S. Zhang et al. \\
+ALG-0830 & 830 & Chinese Pangolin Optimizer (CPO) & 2025 & Z. Guo, G. Liu et al. \\
+ALG-0831 & 831 & Domestic Cattle Optimization Algorithm (DCOA) & 2025 & J. Zhang \\
+ALG-0832 & 832 & Dream Optimization Algorithm (DOA) & 2025 & Y. Lang and Y. Gao \\
+ALG-0833 & 833 & Draco Lizard Optimizer (DLO) & 2025 & et al.  X. Wang \\
+ALG-0834 & 834 & Evolutionary Bayesian Optimization (EBO) & 2025 & C. Vişan et al. \\
+ALG-0835 & 835 & Fungal Growth Optimizer (FGO) & 2025 & M. Abdel-Basset et al. \\
+ALG-0836 & 836 & Goat Optimization Algorithm (GOA) & 2025 & H. Nozari et al. \\
+ALG-0837 & 837 & Groupers and Moray Eels Optimization (GME) & 2025 & N. A. Mansour et al \\
+ALG-0838 & 838 & Lagrange Elementary Optimization (LEO) & 2025 & A. M. Aladdin et al. \\
+ALG-0839 & 839 & Lightning Energy Modulation Optimization (LEMO) & 2025 & J. Zhang \\
+ALG-0840 & 840 & Lionfish Search Algorithm (LSA) & 2025 & S. M. Kadhim et al. \\
+ALG-0841 & 841 & Movable-Antenna Position Optimization (MAPO) & 2025 & Y. Zhang, C. You et al. \\
+ALG-0842 & 842 & Nurse Optimization Algorithm (NOA) & 2025 & J. Zhang \\
+ALG-0843 & 843 & Orangutan Optimization Algorithm (OOA) & 2025 & T. Hamadneh et al. \\
+ALG-0844 & 844 & Paper Publishing-Based Optimization (PPO) & 2025 & T. Hamadneh et al. \\
+ALG-0845 & 845 & Perfumer Optimization Algorithm (PEOA) & 2025 & T. Hamadneh et al. \\
+ALG-0846 & 846 & Planetary Opposition Optimization (POO) & 2025 & J. Zhang \\
+ALG-0847 & 847 & Revolution Optimization Algorithm (ROA) & 2025 & T. Hamadneh et al. \\
+ALG-0848 & 848 & Sharpbelly Fish Optimization Algorithm (SFOA) & 2025 & J. Liu, R. Wang et al. \\
+ALG-0849 & 849 & Spider-Tailed Horned Viper Optimization (STHVO) & 2025 & T. Hamadneh et al. \\
+ALG-0850 & 850 & Starfish Optimization Algorithm (SFOA) & 2025 & C. Zhong, G. Li, et al. \\
+ALG-0851 & 851 & Success-Based Optimization Algorithm (SBOA) & 2025 & O. D. Lara-Montaño et al. \\
+ALG-0852 & 852 & Superb Fairy-Wren Optimization Algorithm (SFWOA) & 2025 & H. Jia, X. Zhou et al. \\
+ALG-0853 & 853 & Supercell Thunderstorm Algorithm (STA) & 2025 & M. H. Hassan and S. Kamel \\
+ALG-0854 & 854 & Swallow Search Algorithm (SSA) & 2025 & F. S. Khoshaba et al. \\
+ALG-0855 & 855 & Tianji's Horse Racing Optimization (THRO) & 2025 & L. Wang, H. Du et al. \\
+ALG-0856 & 856 & University Professor Heuristic Optimization (UPHO) & 2025 & J. Zhang \\
+ALG-0857 & 857 & Generalized Particle Swarm Optimization & 2025 & L. Yuan \\
+ALG-0858 & 858 & Birds of Prey-based Optimization & 2025 & M. Ghasemi et al. \\
+ALG-0859 & 859 & Animated Oat Optimization Algorithm & 2025 & R. B. Wang, R. B. Hu et al. \\
+ALG-0860 & 860 & Domestic Sheep Optimization Algorithm & 2025 & J. Zhang \\
+ALG-0861 & 861 & Divine Religions Algorithm (DRA) & 2025 & A. T. Mozhdehiet al. \\
+ALG-0862 & 862 & Schrödinger Optimizer (SRA) & 2025 & N. K. Hussein et al. \\
+ALG-0863 & 863 & Stellar Oscillation Optimizer (SOO) & 2025 & A. Rodan et al. \\
+ALG-0864 & 864 & Dhole Optimization Algorithm (DOA) & 2025 & B. O. Mohammed et al. \\
+ALG-0865 & 865 & Hannibal Barca Optimizer (HBO) & 2025 & M. W. Ouertani et al. \\
+ALG-0866 & 866 & Octopus Optimization Algorithm (OOA) & 2025 & M. Song et al. \\
+ALG-0867 & 867 & Bitterling Colony Optimization (BCO) & 2025 & Z. Lai, J. Ding et al. \\
+ALG-0868 & 868 & Star Death (SD) & 2025 & S. Harifi et al. \\
+ALG-0869 & 869 & Logarithmic Mean-Based Optimization (LMO) & 2025 & I. Dagal, A. Harrison et al. \\
+ALG-0870 & 870 & Raindrop Optimizer & 2025 & S. Chen, G. Yang et al. \\
+ALG-0871 & 871 & Enzyme Action Optimizer (EAO) & 2025 & A. Rodan et al. \\
+ALG-0872 & 872 & Grizzly Bear Fat Increase Optimizer (GBFIO) & 2025 & M. Dehghani, M. Aly et al. \\
+ALG-0873 & 873 & Mantis Shrimp Optimization Algorithm (MShOA) & 2025 & J. A. Sánchez Cortez et al. \\
+ALG-0874 & 874 & Narwhale Optimization Algorithm (NWOA) & 2025 & R. Masadeh et al. \\
+ALG-0875 & 875 & Cuckoo Catfish Optimizer (CCO) & 2025 & T. L. Wang et al. \\
+ALG-0876 & 876 & Natural Selection Optimization Algorithm (NSOA) & 2025 & H. Liu et al. \\
+ALG-0877 & 877 & Tribal Intelligent Evolution Optimization (TIEO) & 2025 & Y. Yao et al. \\
+ALG-0878 & 878 & EvoMapX & 2025 & B. H. Abed-Alguni \\
+ALG-0879 & 879 & Exponential Groupers and Moray Eels Optimization & 2025 & R. Thyagaraj et al. \\
+ALG-0880 & 880 & Library and Readers Algorithm (LRA) & 2025 & A. Zraiqat et al. \\
+ALG-0881 & 881 & Thunderstorm and Cloud Algorithm & 2025 & A. Zraiqat et al. \\
+ALG-0882 & 882 & Spotted Deer Optimization Algorithm & 2025 & J. Zhang \\
+ALG-0883 & 883 & Attraction–Repulsion Optimisation Algorithm (AROA) & 2025 & N. Zhang, Z. Jiang et al. \\
+ALG-0884 & 884 & Multi-objective Grey Wolf Optimizer (MOGWO) & 2025 & A. S. Hasan et al. \\
+ALG-0885 & 885 & Flower Pollination Algorithm-Based MPPT Technique & 2025 & M. A. Hasnanin et al. \\
+ALG-0886 & 886 & Runge–Kutta Optimization Algorithm & 2025 & R. A. Khurma et al. \\
+ALG-0887 & 887 & Flying Fox Optimization Algorithm (FFO) & 2025 & K. Zervoudakis et al. \\
+\end{longtable}
+\end{landscape}
+
+\end{document}

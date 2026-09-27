@@ -1,0 +1,55 @@
+\documentclass[9pt]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{fontenc}
+
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+\title{Supplementary Data S6: Search, Screening and Protocol Audit}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026}
+\begin{document}
+\maketitle
+\section*{Protocol status}
+The review window is 1 January 1965 through 31 December 2025. The protocol was not prospectively registered. The supplied source package does not contain the original database-export timestamps or complete paired screening decisions. No retrospective execution dates, disagreements, or reliability coefficients are created.
+
+\section*{Harmonized database search specification}
+\small
+\begin{longtable}{P{2.7cm}P{9.2cm}P{3.3cm}}
+\caption{Database-specific search specification reported by the manuscript.}\\
+\toprule
+Source & Harmonized search specification & Limits / audit status\\
+\midrule\endfirsthead
+\toprule Source & Harmonized search specification & Limits / audit status\\\midrule\endhead
+Google Scholar & \texttt{("metaheuristic" OR "evolutionary algorithm" OR "swarm intelligence" OR "nature-inspired optimization" OR "bio-inspired optimization") optimization} & 1965--2025; relevance/date-bounded searches and citation chaining; exact execution timestamp not archived.\\
+IEEE Xplore & \texttt{("All Metadata":"metaheuristic" OR "All Metadata":"evolutionary algorithm" OR "All Metadata":"swarm intelligence" OR "All Metadata":"nature-inspired optimization") AND "All Metadata":"optimization"} & Publication years 1965--2025; journals/conferences; exact execution timestamp not archived.\\
+ScienceDirect & \texttt{("metaheuristic" OR "evolutionary algorithm" OR "swarm intelligence" OR "nature-inspired optimization" OR "bio-inspired optimization") AND optimization} & 1965--2025; research articles/conference content where available; exact execution timestamp not archived.\\
+SpringerLink & \texttt{("metaheuristic" OR "evolutionary algorithm" OR "swarm intelligence" OR "nature-inspired optimization") AND optimization} & 1965--2025; articles/conference papers; exact execution timestamp not archived.\\
+Wiley Online Library & \texttt{("metaheuristic" OR "evolutionary algorithm" OR "swarm intelligence" OR "nature-inspired optimization") AND optimization} & Years available through 2025; scholarly articles; exact execution timestamp not archived.\\
+\bottomrule\end{longtable}
+
+\section*{Search and screening arithmetic}
+\begin{equation*}
+4{,}696-3{,}810=886,\qquad 886-824=62.
+\end{equation*}
+The 887-row historical algorithm catalogue is an entity-level resource and is intentionally not inserted as a PRISMA stage.
+
+\section*{Screening decision schema}
+A reproducible screening ledger requires the fields
+\begin{quote}\small
+\texttt{record\_id, report\_id, database, title, doi, screener1\_decision, screener2\_decision, disagreement, adjudicated\_decision, primary\_exclusion\_code, secondary\_code, reviewer\_role, decision\_date}.
+\end{quote}
+If a stage was screened by one reviewer, that fact should be encoded directly. Cohen's $\kappa$ or percentage agreement is reportable only for genuinely paired independent decisions. The supplied source package does not support a retrospective $\kappa$ calculation.
+
+\section*{Protocol deviations and source-specific PRISMA counts}
+The manuscript provides the harmonized search strings and aggregate PRISMA arithmetic but not the original database-export timestamps or a source-by-source decomposition summing to 4,696. Accordingly, this supplement does not reuse older, inconsistent 4,695-record figures from prior drafts. The latest manuscript values above control the supplementary package.
+\end{document}

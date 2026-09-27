@@ -1,0 +1,46 @@
+\documentclass[9pt]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{fontenc}
+
+\usepackage{booktabs,longtable,array,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{Supplementary Data S9: Targeted Multi-/Many-Objective and AI-Assisted Design References}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026}
+\begin{document}
+\maketitle
+
+\section*{Purpose}
+The multi-objective, many-objective and AI-assisted-design sections of the manuscript are targeted conceptual extensions rather than separate exhaustive systematic searches. This supplement records the principal sources used for those extensions and the evidential role of each source.
+
+\small
+\begin{longtable}{P{3.1cm}P{8.5cm}P{3.2cm}}
+\caption{Targeted references supporting RQ6 and RQ7.}\\
+\toprule
+\textbf{Key} & \textbf{Complete reference} & \textbf{Role}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{Key} & \textbf{Complete reference} & \textbf{Role}\\
+\midrule
+\endhead
+DebEtAl2002NSGAII & K. Deb, A. Pratap, S. Agarwal and T. Meyarivan, ``A fast and elitist multiobjective genetic algorithm: NSGA-II,'' \textit{IEEE Transactions on Evolutionary Computation}, vol. 6, no. 2, pp. 182--197, 2002, doi:10.1109/4235.996017. & Canonical dominance-based multi-objective framework.\\
+ZhangLi2007MOEAD & Q. Zhang and H. Li, ``MOEA/D: A multiobjective evolutionary algorithm based on decomposition,'' \textit{IEEE Transactions on Evolutionary Computation}, vol. 11, no. 6, pp. 712--731, 2007, doi:10.1109/TEVC.2007.892759. & Canonical decomposition-based multi-objective framework.\\
+DebJain2014NSGAIII & K. Deb and H. Jain, ``An evolutionary many-objective optimization algorithm using reference-point-based nondominated sorting approach, Part I: Solving problems with box constraints,'' \textit{IEEE Transactions on Evolutionary Computation}, vol. 18, no. 4, pp. 577--601, 2014, doi:10.1109/TEVC.2013.2281535. & Reference-point many-objective framework.\\
+ChengEtAl2016RVEA & R. Cheng, Y. Jin, M. Olhofer and B. Sendhoff, ``A reference vector guided evolutionary algorithm for many-objective optimization,'' \textit{IEEE Transactions on Evolutionary Computation}, vol. 20, no. 5, pp. 773--791, 2016, doi:10.1109/TEVC.2016.2519378. & Reference-vector many-objective framework.\\
+ChouTruong2020MOJS & J.-S. Chou and D.-N. Truong, ``Multiobjective optimization inspired by behavior of jellyfish for solving structural design problems,'' \textit{Chaos, Solitons \& Fractals}, vol. 135, Art. 109738, 2020, doi:10.1016/j.chaos.2020.109738. & Multi-objective Jellyfish Search extension and structural-design validation.\\
+ShaheenEtAl2021MOQRJFS & A. M. Shaheen, R. A. El-Sehiemy, M. M. Alharthi, S. S. M. Ghoneim and A. R. Ginidi, ``Multi-objective Jellyfish Search optimizer for efficient power system operation based on multi-dimensional OPF framework,'' \textit{Energy}, vol. 237, Art. 121478, 2021, doi:10.1016/j.energy.2021.121478. & Multi-objective Jellyfish Search application to optimal power flow.\\
+WangEtAl2024UMOJS & X. Wang, Y. Feng, J. Tang, Z. Dai and W. Zhao, ``A UAV path planning method based on the framework of multi-objective Jellyfish Search algorithm,'' \textit{Scientific Reports}, vol. 14, Art. 28058, 2024, doi:10.1038/s41598-024-79323-0. & Many-objective UAV path-planning extension of Jellyfish Search.\\
+TianEtAl2022RLOperatorSelection & Y. Tian, X. Li, H. Ma, X. Zhang, K. C. Tan and Y. Jin, ``Deep reinforcement learning based adaptive operator selection for evolutionary multi-objective optimization,'' \textit{IEEE Transactions on Emerging Topics in Computational Intelligence}, vol. 7, no. 4, pp. 1051--1064, 2023; online publication metadata in the archived record is 2022, doi:10.1109/TETCI.2022.3146882. & Learning-based adaptive operator selection.\\
+LiEtAl2021SurrogateEDA & J.-Y. Li, Z.-H. Zhan, J. Xu, S. Kwong and J. Zhang, ``Surrogate-assisted hybrid-model estimation of distribution algorithm for mixed-variable hyperparameters optimization in convolutional neural networks,'' \textit{IEEE Transactions on Neural Networks and Learning Systems}, vol. 34, no. 5, pp. 2338--2352, 2023, doi:10.1109/TNNLS.2021.3106399. & Surrogate-assisted algorithm/control design.\\
+RomeraParedesEtAl2024FunSearch & B. Romera-Paredes, M. Barekatain, A. Novikov, M. Balog, M. P. Kumar, E. Dupont, F. J. R. Ruiz, J. S. Ellenberg, P. Wang, O. Fawzi, P. Kohli and A. Fawzi, ``Mathematical discoveries from program search with large language models,'' \textit{Nature}, vol. 625, no. 7995, pp. 468--475, 2024, doi:10.1038/s41586-023-06924-6. & LLM-guided executable program search.\\
+LiuEtAl2024EoH & F. Liu, X. Tong, M. Yuan, X. Lin, F. Luo, Z. Wang, Z. Lu and Q. Zhang, ``Evolution of Heuristics: Towards efficient automatic algorithm design using large language model,'' in \textit{Proceedings of the 41st International Conference on Machine Learning}, PMLR, vol. 235, pp. 32201--32223, 2024. & Evolution of Heuristics automatic algorithm design.\\
+NovikovEtAl2025AlphaEvolve & A. Novikov et al., ``AlphaEvolve: A coding agent for scientific and algorithmic discovery,'' arXiv:2506.13131, 2025, doi:10.48550/arXiv.2506.13131. & Emerging preprint evidence on evolutionary coding agents; not treated as peer-reviewed benchmark evidence.\\
+\bottomrule
+\end{longtable}
+
+\paragraph{Scope boundary.}
+AlphaEvolve is explicitly treated as a 2025 preprint/emerging source rather than as peer-reviewed benchmark evidence. The remaining references define canonical mechanisms or provide targeted primary examples for the RQ6--RQ7 conceptual extensions.
+\end{document}

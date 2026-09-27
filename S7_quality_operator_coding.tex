@@ -1,0 +1,154 @@
+\documentclass[8pt]{article}
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{fontenc}
+
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+\title{Supplementary Data S7: Quality-Appraisal and Operator-Coding Codebook}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026}
+\begin{document}
+\maketitle
+\section*{Quality appraisal}
+The manuscript specifies ten items scored 0--2, with a maximum of 20 and an eligibility threshold of 16/20 for the deep critical corpus. The operational anchors below make the rubric reproducible. They do not substitute for the original assessor decisions, which were not present in the supplied archive.
+
+\begin{longtable}{P{1.0cm}P{4.2cm}P{3.6cm}P{3.6cm}P{3.6cm}}
+\caption{Operational quality-appraisal codebook.}\\
+\toprule
+Item & Criterion & Score 0 & Score 1 & Score 2\\
+\midrule\endfirsthead
+\toprule Item & Criterion & Score 0 & Score 1 & Score 2\\\midrule\endhead
+Q1 & Problem formulation & Problem/decision variables/objective unclear. & Problem stated but important variables, constraints or scope only partly specified. & Objective, variables, constraints and scope clearly defined.\\
+Q2 & Mathematical formulation & No usable equations/algorithmic specification. & Partial formulation or ambiguous update rules. & Sufficient equations/pseudocode to reconstruct the method.\\
+Q3 & Novelty justification & Novelty asserted mainly by name/metaphor. & Some comparison to prior mechanisms but incomplete. & Explicit structural comparison identifying new operators/state/topology/memory/control.\\
+Q4 & Convergence/theoretical grounding & No theoretical rationale or convergence discussion. & Qualitative/theoretical discussion without formal support. & Formal analysis, justified convergence properties, or clearly bounded theory.\\
+Q5 & Comparator adequacy & Weak/outdated baselines or unequal conditions. & Reasonable baselines but tuning/budget comparability partly unclear. & Strong contemporary baselines under matched and documented conditions.\\
+Q6 & Statistical validation & Single-run/best-only or no uncertainty/statistical analysis. & Repeated runs or uncertainty reported but analysis limited. & Repeated-run statistics with appropriate uncertainty/tests and transparent test direction.\\
+Q7 & Complexity/runtime reporting & No complexity or runtime information. & Partial complexity/runtime evidence without full environment. & Complexity and/or runtime with hardware/software and fair resource accounting.\\
+Q8 & Reproducibility information & Key parameters, code/data or run-generation details absent. & Some parameters/code/data disclosed. & Sufficient code/data/parameters/seeds or run procedure for independent reproduction.\\
+Q9 & Real-world validation & No real-world/constrained validation when relevant. & Limited illustrative application. & Substantive real-world or engineering validation with explicit problem definition/constraints.\\
+Q10 & Limitations reporting & No limitations or failure conditions discussed. & Generic limitations noted. & Specific limitations, applicability bounds and failure/uncertainty conditions discussed.\\
+\bottomrule\end{longtable}
+
+\section*{Study-level audit matrix}
+\begin{landscape}\scriptsize
+\begin{longtable}{P{1.0cm}P{1.5cm}P{2.0cm}P{4.0cm}P{4.2cm}P{4.0cm}P{4.0cm}P{3.0cm}}
+\caption{RP1--RP62 descriptive coding and quality-rating availability.}\\
+\toprule
+RP & ALG ID & Algorithm label & Framework category & Mechanism label & Focus area & Quality score status & Operator-coding status\\
+\midrule\endfirsthead
+\toprule RP & ALG ID & Algorithm label & Framework category & Mechanism label & Focus area & Quality score status & Operator-coding status\\\midrule\endhead
+RP1 & ALG-0828 & CFO & Physics metaphor & Flame dynamics & Continuous optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP2 & ALG-0839 & LEMO & Physics energy model & Lightning discharge search & Fast convergence & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP3 & ALG-0853 & STA & Meteorological model & Storm dynamics & Large-scale problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP4 & ALG-0862 & SRA & Quantum physics & Quantum probability motion & Complex landscapes & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP5 & ALG-0863 & SOO & Astronomy physics & Oscillation motion & Precision search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP6 & ALG-0868 & SD & Astrophysical model & Stellar collapse dynamics & Local exploitation & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP7 & ALG-0869 & LMO & Mathematical physics & Mean operator update & Numerical optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP8 & ALG-0886 & RKOA & Numerical analysis & Runge--Kutta search & High accuracy optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP9 & ALG-0883 & AROA & Force interaction & Attraction--repulsion motion & Continuous problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP10 & ALG-0826 & BPBO & Predator behavior & Hunting strategy & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP11 & ALG-0830 & CPO & Animal defense & Protective movement & Multimodal problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP12 & ALG-0835 & FGO & Biological growth & Mycelium expansion & Stability enhancement & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP13 & ALG-0836 & GOA & Animal locomotion & Climbing search & Nonlinear optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP14 & ALG-0840 & LSA & Marine predator & Hunting dynamics & Exploration balance & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP15 & ALG-0843 & OOA & Primate sociality & Social learning & Global optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP16 & ALG-0848 & SFOA & Fish schooling & Collective motion & Exploration & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP17 & ALG-0849 & STHVO & Reptile ambush & Predator strike & Local refinement & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP18 & ALG-0850 & SFOA & Marine organism & Regenerative search & Robust convergence & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP19 & ALG-0852 & SFWOA & Bird cooperation & Mating strategy & Diversity maintenance & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP20 & ALG-0854 & SSA & Bird flocking & Swallow flight search & Global exploration & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP21 & ALG-0866 & OOA & Marine animal & Tentacle exploration & Nonlinear optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP22 & ALG-0872 & GBFIO & Mammal physiology & Energy reserve dynamics & Survival optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP23 & ALG-0873 & MShOA & Marine crustacean & Strike dynamics & Precision search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP24 & ALG-0874 & NWOA & Marine mammal & Migration behavior & Exploration ability & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP25 & ALG-0887 & FFO & Bat echolocation & Sonar navigation & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP26 & ALG-0833 & DLO & Animal behavior & Gliding motion & Search diversification & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP27 & ALG-0867 & BCO & Fish colony & School interaction & Population search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP28 & ALG-0864 & DOA & Animal hunting & Pack dynamics & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP29 & ALG-0875 & CCO & Marine predator & Symbiotic hunting & Exploration balance & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP30 & ALG-0831 & DCOA & Animal herd & Herd movement & Continuous optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP31 & ALG-0860 & DSOA & Animal grazing & Herd exploration & Search diversity & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP32 & ALG-0882 & SDOA & Animal group & Herd intelligence & Multimodal problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP33 & ALG-0829 & CEO & Chaotic evolution & Chaotic mutation search & Exploration improvement & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP34 & ALG-0834 & EBO & Bayesian evolution & Evolution + surrogate & Expensive functions & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP35 & ALG-0876 & NSOA & Natural selection & Selection mechanism & Optimization theory & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP36 & ALG-0877 & TIEO & Social evolution & Cooperative adaptation & Dynamic systems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP37 & ALG-0878 & EMX & Evolution mapping & Mapping evolution & Complex landscapes & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP38 & ALG-0884 & MOGWO & Swarm evolution & Pareto hunting & Multi-objective problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP39 & ALG-0827 & BUOA & Construction metaphor & Builder heuristic & Engineering design & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP40 & ALG-0832 & DOA & Cognitive metaphor & Dream search & Complex landscapes & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP41 & ALG-0844 & PPO & Academic metaphor & Publication competition & Decision systems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP42 & ALG-0845 & PEOA & Sensory metaphor & Diffusion search & Continuous problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP43 & ALG-0847 & ROA & Social dynamics & Revolution dynamics & Dynamic search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP44 & ALG-0855 & THRO & Strategy metaphor & Competitive pairing & Decision optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP45 & ALG-0856 & UPHO & Educational model & Teaching learning & Parameter tuning & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP46 & ALG-0861 & DRA & Cultural metaphor & Belief propagation & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP47 & ALG-0865 & HBO & Historical metaphor & Tactical maneuver & Strategic optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP48 & ALG-0880 & LRA & Knowledge exchange & Reader interaction & Information optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP49 & ALG-0881 & TCA & Weather hybrid & Cloud dynamics & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP50 & ALG-0885 & FPA--MPPT & Engineering hybrid & Pollination + control & Power systems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP51 & ALG-0857 & GPSO & Swarm variant & Modified PSO & Parameter tuning & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP52 & ALG-0841 & MAPO & Conceptual & Position adjustment & Wireless optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP53 & ALG-0838 & LEO & Mathematical & Lagrange update & Numerical problems & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP54 & ALG-0842 & NOA & Social metaphor & Care strategy & Resource allocation & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP55 & ALG-0846 & POO & Conceptual & Opposition motion & Continuous search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP56 & ALG-0851 & SBOA & Performance-driven & Success feedback & Adaptive optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP57 & ALG-0859 & AOA & Conceptual & Animated interaction & Exploration balance & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP58 & ALG-0871 & EAO & Biochemical metaphor & Reaction process & Global search & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP59 & ALG-0870 & RO & Natural metaphor & Raindrop motion & Continuous optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP60 & ALG-0879 & EGME & Marine hybrid & Exponential predator model & Exploration & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP61 & ALG-0881 & TCA2 & Atmospheric model & Storm interaction & Search balance & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+RP62 & ALG-0882 & SDOA2 & Animal model & Herd search & Multimodal optimization & Q1--Q10 item ratings not recoverable from supplied archive; no score reconstructed. & Author-coded descriptive mechanism available; independent paired operator code not archived. \\
+\bottomrule\end{longtable}\end{landscape}
+
+\section*{Mechanism-coding representation}
+An optimizer is represented as
+\[
+\mathcal{A}=(\mathcal{S},\mathcal{O}_{E},\mathcal{O}_{X},\pi_t,\mathcal{M},\mathcal{C}),
+\]
+where $\mathcal{S}$ is maintained state, $\mathcal{O}_{E}$ exploration/diversification, $\mathcal{O}_{X}$ exploitation/intensification, $\pi_t$ the activation/adaptation policy, $\mathcal{M}$ memory/information exchange and $\mathcal{C}$ selection/acceptance/constraint handling.
+
+Four recurring primitives are
+\begin{align*}
+\mathcal{O}_{D}:~\mathbf{x}_{i}^{t+1}&=\mathbf{x}_{i}^{t}+a_t(\mathbf{x}_{j}^{t}-\mathbf{x}_{k}^{t}),\\
+\mathcal{O}_{A}:~\mathbf{x}_{i}^{t+1}&=\mathbf{x}_{i}^{t}+b_t(\mathbf{x}_{\star}^{t}-\mathbf{x}_{i}^{t}),\\
+\mathcal{O}_{R}:~\mathbf{x}_{i}^{t+1}&=\mathbf{x}_{i}^{t}+\sigma_t\boldsymbol{\varepsilon}_{i}^{t},\\
+\mathcal{O}_{I}:~\mathbf{x}_{i}^{t+1}&=\mathbf{x}_{i}^{t}+\sum_{j\in\mathcal{N}_i}w_{ij}^{t}(\mathbf{x}_{j}^{t}-\mathbf{x}_{i}^{t}).
+\end{align*}
+
+\begin{table}[h]
+\centering\scriptsize
+\caption{Representative mechanism mappings used to operationalize the taxonomy.}
+\begin{tabular}{P{3.0cm}P{4.0cm}P{4.0cm}P{4.0cm}}
+\toprule
+Method & Exploration & Exploitation & Memory/selection structure\\
+\midrule
+Genetic Algorithm & Mutation and recombination & Fitness-biased selection & Population inheritance; survivor/parent selection\\
+Simulated Annealing & Acceptance of worsening moves at high temperature & Cooling and local proposals & Current state; Metropolis-type acceptance\\
+Particle Swarm Optimization & Inertia/stochastic coefficients & Cognitive/social attraction & Personal and social best memories\\
+Ant Colony Optimization & Probabilistic construction and evaporation & Pheromone reinforcement & Distributed pheromone memory\\
+Artificial Bee Colony & Scout replacement & Employed/onlooker source updates & Food-source population and greedy replacement\\
+Harris Hawks Optimization & Broad exploration/perch moves & Besiege and rapid-dive moves & Best/prey estimate and energy-dependent switching\\
+Marine Predators Algorithm & Brownian/L\'evy/environmental relocation & Elite-guided phase-dependent motion & Elite matrix and phase schedule\\
+Artificial Jellyfish Search & Passive/current-related stochastic motion & Active pairwise/current-following motion & Population/best/mean information and time control\\
+NSGA-II & Variation plus crowding-supported spread & Nondominated elitist selection & Rank and crowding distance\\
+MOEA/D & Variation across subproblems & Scalarized local subproblem improvement & Weight vectors and neighbourhoods\\
+NSGA-III/RVEA & Variation with distributed reference geometry & Reference-directed environmental selection & Reference points/vectors and niche association\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Reliability rule.}
+Eligibility, quality items and operator categories should be independently double-coded when prevalence or reliability statistics are reported. No retrospective $\kappa$ or agreement percentage is computed because paired assessor decisions are absent from the supplied archive.
+\end{document}

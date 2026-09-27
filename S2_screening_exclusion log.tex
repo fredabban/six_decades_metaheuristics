@@ -1,0 +1,76 @@
+\documentclass[10pt]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage[expansion=false]{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+\title{Supplementary Data S2: Screening Exclusion Log and Decision Codebook}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+
+
+\begin{document}
+\maketitle
+\section*{Purpose}
+The manuscript reports 4,696 identified records, 3,810 duplicate or duplicate-version instances removed, 886 deduplicated reports screened, 62 studies retained in the contemporary critical corpus, and 824 reports not retained for that deep-analysis corpus. The source package supplied with the manuscript does \emph{not} contain the bibliographic identities and record-level exclusion decisions for those 824 non-retained reports. This supplement therefore records the exact available aggregate evidence and the complete decision codebook without fabricating an item-level ledger.
+
+\begin{table}[h]
+\centering
+\caption{Auditable study-selection arithmetic.}
+\begin{tabular}{P{8.0cm}r}
+\toprule
+Stage & Count\\
+\midrule
+Records identified & 4,696\\
+Duplicate/duplicate-version instances removed & 3,810\\
+Deduplicated reports screened & 886\\
+Reports not retained in the deep critical corpus & 824\\
+Studies retained in the contemporary critical corpus & 62\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Primary exclusion codes}
+\begin{description}
+\item[E1] No first-level algorithm or substantive methodological contribution.
+\item[E2] Application-only use of an established algorithm.
+\item[E3] Duplicate/companion report or nominal variant without an independent contribution.
+\item[E4] Non-peer-reviewed or preprint-only at the eligibility cutoff.
+\item[E5] Insufficient mathematical, algorithmic or implementation detail.
+\item[E6] Insufficient benchmark or real-world validation for the relevant research question.
+\item[E7] Full text unavailable.
+\item[E8] Outside the temporal or language scope.
+\item[E9] Insufficient methodological quality for entry into the deep critical corpus under the stated 16/20 threshold.
+\end{description}
+
+\section*{Decision hierarchy}
+When several reasons apply, the earliest decisive reason is the primary code. Any additional applicable reason is a secondary code. The exclusion decision must be linked to a \texttt{REC} or \texttt{REP} identifier, screening stage, reviewer decision and source record. No distribution of E1--E9 is reported here because the record-level decisions are absent from the supplied archive.
+
+\begin{longtable}{P{4.0cm}P{10.2cm}}
+\caption{Completeness status of the exclusion evidence.}\\
+\toprule
+Evidence item & Status\\
+\midrule
+\endfirsthead
+\toprule Evidence item & Status\\\midrule\endhead
+Aggregate excluded count & Verified from manuscript: 824 reports.\\
+Exclusion-code definitions & Fully specified as E1--E9 above.\\
+Item-level report identities & Not recoverable from the supplied manuscript/source archive.\\
+Item-level primary reasons & Not recoverable from the supplied manuscript/source archive.\\
+Item-level secondary reasons & Not recoverable from the supplied manuscript/source archive.\\
+Quality score for excluded reports & Not recoverable from the supplied manuscript/source archive.\\
+Retrospective reconstruction & Prohibited in this supplement; no pseudo-records or inferred reasons are created.\\
+\bottomrule
+\end{longtable}
+
+\paragraph{Submission interpretation.}
+This file is a complete disclosure of the exclusion evidence that is supportable from the manuscript. A true 824-row exclusion ledger can only be produced from the authors' original screening/export records; inventing such rows would contradict the manuscript's stated non-fabrication rule.
+\end{document}

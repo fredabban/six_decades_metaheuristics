@@ -1,0 +1,122 @@
+\documentclass[9pt]{article}
+\usepackage[margin=1.4cm]{geometry}
+\usepackage{fontenc}
+
+\usepackage{booktabs,longtable,array,tabularx,multirow}
+\usepackage{pdflscape}
+\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTpre}{0.4em}
+\setlength{\LTpost}{0.4em}
+\setlist[itemize]{leftmargin=1.35em}
+\setlist[enumerate]{leftmargin=1.45em}
+\title{Supplementary Data S8: Bidirectional Citation and Result-Traceability Audit}
+\author{Supplement to: \textit{Sixty Years Retrospective on Metaheuristic Algorithms (1965--2025): A Systematic Review}}
+\date{September 2026 (revised)}
+\begin{document}
+\maketitle
+\section*{Static manuscript audit}
+This audit was re-run against the final manuscript source and its accompanying \texttt{reference\_meta.bib}, both included in full in this submission package. The manuscript source contains 57 unique citation keys and 46 LaTeX labels. Every label is referenced at least once in the running text; every citation key resolves to exactly one bibliography entry. Duplicate labels detected: 0. Unresolved internal reference targets detected: 0. Orphaned (never-referenced) labels detected: 0. Environment begin/end mismatches detected: 0.
+
+\begin{table}[h]
+\centering
+\caption{Static integrity checks.}
+\begin{tabular}{P{8.8cm}P{5.2cm}}
+\toprule
+Check & Result\\
+\midrule
+PRISMA arithmetic & $4{,}696-3{,}810=886$ and $886-824=62$\\
+Historical catalogue total & 887 rows\\
+Recent-wave concentration & $189+229+248=666$ rows; $666/887=75.1\%$ (rounded)\\
+Duplicate LaTeX labels & None\\
+Unresolved internal references & None\\
+Orphaned (never-referenced) labels & None\\
+Environment begin/end mismatch & None\\
+Unique citation keys & 57\\
+Bibliography entries & 57\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{Citation-key audit}
+The manuscript's \texttt{reference\_meta.bib} is included in full in this package and every one of the 57 citation keys used in the manuscript resolves to exactly one entry in it. An earlier working draft used 35 non-descriptive placeholder keys of the form \texttt{pNN} alongside 22 descriptive author--year keys. As part of this audit, all 35 placeholder keys were renamed to descriptive author--year keys, consistently across the manuscript and the bibliography file, and each renamed entry's author, year, title, and venue were checked against the underlying publication. Table~\ref{tab:s8-keys} records the final key for every citation together with its audit status.
+
+During this audit, the bibliography was also found to contain one exact content duplicate: the placeholder key \texttt{p63} and the (now renamed) key \texttt{LiEtAl2020SMA} were two separate entries with identical author, title, journal, volume, and page fields, both corresponding to S. Li, H. Chen, M. Wang, A. A. Heidari, and S. Mirjalili, ``Slime mould algorithm: A new method for stochastic optimization,'' \textit{Future Generation Computer Systems}, vol.~111, pp.~300--323, 2020, doi:10.1016/j.future.2020.03.055. The manuscript already cited this paper consistently under the surviving key; the duplicate entry (\texttt{p63}) was removed from \texttt{reference\_meta.bib} rather than retained, since keeping two keys for one source would itself be a traceability defect. No citation in the manuscript pointed to the removed key, so its removal changes no in-text citation.
+
+\small
+\begin{longtable}{P{5.4cm}P{4.0cm}P{4.4cm}}
+\caption{Current manuscript citation keys and audit state.}\label{tab:s8-keys}\\
+\toprule Current key & Prior placeholder key & Status\\\midrule\endfirsthead
+\toprule Current key & Prior placeholder key & Status\\\midrule\endhead
+AbdollahzadehEtAl2022MGO & --- & Resolved; author--year key unchanged. \\
+AbdollahzadehEtAl2024PO & --- & Resolved; author--year key unchanged. \\
+AbdollahzadehGharehchopoghMirjalili2021 & --- & Resolved; author--year key unchanged. \\
+CampbellEtAl2020SWiM & --- & Resolved; author--year key unchanged. \\
+ChengEtAl2016RVEA & --- & Resolved; author--year key unchanged. \\
+ChouTruong2020MOJS & --- & Resolved; author--year key unchanged. \\
+ChouTruong2021JS & --- & Resolved; author--year key unchanged. \\
+DebEtAl2002NSGAII & --- & Resolved; author--year key unchanged. \\
+DebJain2014NSGAIII & --- & Resolved; author--year key unchanged. \\
+JinHeLin2019 & --- & Resolved; author--year key unchanged. \\
+LiuEtAl2024EoH & --- & Resolved; author--year key unchanged. \\
+NovikovEtAl2025AlphaEvolve & --- & Resolved; author--year key unchanged. \\
+PageEtAl2021PRISMA & --- & Resolved; author--year key unchanged. \\
+RomeraParedesEtAl2024FunSearch & --- & Resolved; author--year key unchanged. \\
+ShaheenEtAl2021MOQRJFS & --- & Resolved; author--year key unchanged. \\
+SharifiEtAl2025CHOA & --- & Resolved; author--year key unchanged. \\
+ShayanfarGharehchopogh2018 & --- & Resolved; author--year key unchanged. \\
+WangEtAl2024UMOJS & --- & Resolved; author--year key unchanged. \\
+WangXiang2020 & --- & Resolved; author--year key unchanged. \\
+WolpertMacready1997NFL & --- & Resolved; author--year key unchanged. \\
+ZhangLi2007MOEAD & --- & Resolved; author--year key unchanged. \\
+ZhaoYu2023 & --- & Resolved; author--year key unchanged. \\
+BolufeRohlerTamayoVera2025MLforMH & p11 & Resolved; renamed from placeholder key. \\
+KirkpatrickEtAl1983SimulatedAnnealing & p16 & Resolved; renamed from placeholder key. \\
+KennedyEberhart1995PSO & p17 & Resolved; renamed from placeholder key. \\
+Kennedy1997ParticleSwarmSocial & p18 & Resolved; renamed from placeholder key. \\
+FaramarziEtAl2020MPA & p19 & Resolved; renamed from placeholder key. \\
+HeidariEtAl2019HHO & p23 & Resolved; renamed from placeholder key. \\
+LiEtAl2020SMA & p24 & Resolved; renamed from placeholder key; duplicate key \texttt{p63} removed (see above). \\
+Fogel2006EvolutionaryComputation & p29 & Resolved; renamed from placeholder key. \\
+RajwarEtAl2023MHTaxonomyReview & p32 & Resolved; renamed from placeholder key. \\
+AlmuftiEtAl2023MHOverview & p33 & Resolved; renamed from placeholder key. \\
+RajabiMoshtaghiEtAl2021MHClassification & p34 & Resolved; renamed from placeholder key. \\
+MartiEtAl2025FiftyYears & p35 & Resolved; renamed from placeholder key. \\
+FogelFogel1995EPIntro & p36 & Resolved; renamed from placeholder key. \\
+Taillard2016TabuSearch & p41 & Resolved; renamed from placeholder key. \\
+DorigoEtAl2006ACO & p42 & Resolved; renamed from placeholder key. \\
+Karaboga2010ABCAlgorithm & p44 & Resolved; renamed from placeholder key. \\
+Karaboga2005ABCTechReport & p45 & Resolved; renamed from placeholder key. \\
+RashediEtAl2009GSA & p46 & Resolved; renamed from placeholder key. \\
+YangDeb2009CuckooSearch & p47 & Resolved; renamed from placeholder key. \\
+SorensenGlover2013Metaheuristics & p5 & Resolved; renamed from placeholder key. \\
+TianEtAl2022RLOperatorSelection & p59 & Resolved; renamed from placeholder key. \\
+BlumRoli2003MHOverview & p6 & Resolved; renamed from placeholder key. \\
+LiEtAl2021SurrogateEDA & p60 & Resolved; renamed from placeholder key. \\
+Gharehchopogh2023QuantumMH & p64 & Resolved; renamed from placeholder key. \\
+NassefEtAl2023PowerSystemsMH & p65 & Resolved; renamed from placeholder key. \\
+FaramarziEtAl2020EO & p67 & Resolved; renamed from placeholder key. \\
+Mirjalili2015MFO & p73 & Resolved; renamed from placeholder key. \\
+MirjaliliLewis2016WOA & p74 & Resolved; renamed from placeholder key. \\
+Mirjalili2016Dragonfly & p75 & Resolved; renamed from placeholder key. \\
+MirjaliliEtAl2017SSA & p76 & Resolved; renamed from placeholder key. \\
+SharmaTripathi2022IoTMH & p88 & Resolved; renamed from placeholder key. \\
+ValenciaRiveraEtAl2024PowerMH & p89 & Resolved; renamed from placeholder key. \\
+KaurEtAl2023FeatureSelectionMH & p90 & Resolved; renamed from placeholder key. \\
+Passino2002BacterialForaging & p96 & Resolved; renamed from placeholder key. \\
+TimmisEtAl2004ArtificialImmune & p98 & Resolved; renamed from placeholder key. \\
+\bottomrule\end{longtable}
+
+\section*{Cross-reference audit}
+The manuscript was also audited for the correspondence between defined \texttt{\textbackslash label} targets and in-text \texttt{\textbackslash ref}/\texttt{\textbackslash Cref}/\texttt{\textbackslash eqref} calls. An earlier working draft left 37 of 46 labels --- including every numbered table except two, all eight equations, and both non-AI figures --- undefined-by-reference: introduced only through phrases such as ``the table below'' rather than a resolvable pointer. Because floats do not reliably remain adjacent to the text that introduces them once a manuscript is retypeset in a journal's production template, this was treated as a traceability defect rather than a stylistic preference. The final manuscript adds an explicit roadmap paragraph to the Introduction and targeted in-text pointers throughout, so that all 46 labels are now referenced at least once and no reference target is undefined.
+
+\section*{Quantitative-result traceability}
+Every RQ3/RQ4 numerical observation should resolve through \texttt{EXP} $\rightarrow$ \texttt{STU} $\rightarrow$ \texttt{REP} and include benchmark, dimension, budget, run count, comparator, statistic, uncertainty, direction, source page/table/figure and any transformation. Because the fully populated extraction worksheet is absent from the supplied source package, the manuscript appropriately avoids pooled family rankings and untraceable cross-study significance claims; the relevant RQ3 passage now states this directly rather than as an unresolved conditional (Supplementary Data~S4).
+
+\section*{Bidirectional-reference rule}
+A final submission audit enforces two directions: (i) every in-text key resolves to exactly one bibliography record; and (ii) every bibliography record included as evidence is cited by at least one claim, catalogue entity, or supplementary audit row. Both directions hold for the final manuscript and \texttt{reference\_meta.bib} as included in this package. Duplicate DOI/title records are merged only after identity is confirmed, as documented above for \texttt{p63}/\texttt{LiEtAl2020SMA}.
+\end{document}
